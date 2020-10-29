@@ -1,0 +1,80 @@
+[
+  {
+  "name": "Лаваш",
+  "code": ":pita:",
+  "type": "Основа",
+  "typeCode": "basis"
+  },
+  {
+    "name": "Куриное филе",
+    "code": ":chicken_fillet:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Помидор",
+    "code": ":tomato:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Огурец",
+    "code": ":cucumber:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Кетчуп",
+    "code": ":ketchup:",
+    "type": "Соус",
+    "typeCode": "sauce"
+  },
+  {
+    "name": "Майонез",
+    "code": ":mayo:",
+    "type": "Соус",
+    "typeCode": "sauce"
+  },
+  {
+    "name": "Капуста",
+    "code": ":cabbage:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Сыр",
+    "code": ":cheese:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Лук",
+    "code": ":onion:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Перец",
+    "code": ":pepper:",
+    "type": "Доп",
+    "typeCode": "additionally"
+  },
+  {
+    "name": "Сосиска",
+    "code": ":sausage:",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Булочка",
+    "code": ":bun:",
+    "type": "Основа",
+    "typeCode": "basis"
+  },
+  {
+    "name": "Горчица",
+    "code": ":mustard:",
+    "type": "Соус",
+    "typeCode": "sauce"
+  }
+]

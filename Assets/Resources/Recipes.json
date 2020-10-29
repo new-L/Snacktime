@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Обычная шаура",
+    "ingredients": [
+      {"type": "лаваш", "count": "1", "refuse": "required"},
+      {"type": "куриное филе", "count": "1", "refuse": "optional"},
+      {"type": "помидор", "count": "1", "refuse": "optional"},
+      {"type": "огурец", "count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "count": "1", "refuse": "optional"},
+      {"type": "майонез", "count": "1", "refuse": "optional"},
+      {"type": "соль", "count": "1", "refuse": "optional"},
+      {"type": "капуста", "count": "1", "refuse": "optional"}
+    ],
+    "cookingtime": "100",
+    "money":  "100"
+  },
+  {
+    "name": "Сырная шаурма",
+    "ingredients": [
+      {"type": "лаваш", "count": "1", "refuse": "required"},
+      {"type": "куриное филе", "count": "1", "refuse": "optional"},
+      {"type": "помидор", "count": "1", "refuse": "optional"},
+      {"type": "огурец", "count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "count": "1", "refuse": "optional"},
+      {"type": "майонез", "count": "1", "refuse": "optional"},
+      {"type": "соль", "count": "1", "refuse": "optional"},
+      {"type": "капуста", "count": "1", "refuse": "optional"},
+      {"type": "сыр", "count": "1", "refuse": "optional"},
+      {"type": "чеснок", "count": "1", "refuse": "optional"},
+      {"type": "лук", "count": "1", "refuse": "optional"},
+      {"type": "перец", "count": "1", "refuse": "optional"}
+    ],
+    "cookingtime": "170",
+    "money": "300"
+  },
+  {
+    "name": "Двойная шаурма",
+    "ingredients": [
+      {"type": "лаваш", "count": "1", "refuse": "required"},
+      {"type": "куриное филе", "count": "2", "refuse": "optional"},
+      {"type": "помидор", "count": "1", "refuse": "optional"},
+      {"type": "огурец", "count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "count": "2", "refuse": "optional"},
+      {"type": "майонез", "count": "2", "refuse": "optional"},
+      {"type": "капуста", "count": "1", "refuse": "optional"}
+    ],
+    "cookingtime": "140",
+    "money": "200"
+  },
+  {
+    "name": "Шаурма BOMBA",
+    "ingredients": [
+      {"type": "лаваш", "count": "1", "refuse": "required"},
+      {"type": "куриное филе", "count": "2", "refuse": "optional"},
+      {"type": "помидор", "count": "2", "refuse": "optional"},
+      {"type": "огурец", "count": "2", "refuse": "optional"},
+      {"type": "кетчуп", "count": "2", "refuse": "optional"},
+      {"type": "майонез", "count": "2", "refuse": "optional"},
+      {"type": "капуста", "count": "2", "refuse": "optional"}
+    ],
+    "cookingtime": "140",
+    "money": "200"
+  },
+  {
+    "name": "Хот-Дог",
+    "ingredients": [
+      {"type": "сосика", "count": "1", "refuse": "required"},
+      {"type": "булочка для хот-дога", "count": "1", "refuse": "required"},
+      {"type": "кетчуп", "count": "1", "refuse": "optional"},
+      {"type": "горчица", "count": "1", "refuse": "optional"},
+      {"type": "лук", "count": "1", "refuse": "optional"},
+      {"type": "огурец", "count": "1", "refuse": "optional"},
+      {"type": "томат", "count": "1", "refuse": "optional"}
+    ],
+    "cookingtime": "150",
+    "money": "250"
+  }
+]
