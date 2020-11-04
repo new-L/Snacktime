@@ -34,16 +34,18 @@ public class SetRecipes : MonoBehaviour
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.recipeName.text = recipes.name;
         view.cookingTime.text = "~" + recipes.cookingtime.ToString() + " сек.";
+        view.code.text = recipes.code;
     }
 
     public class ResourcePrefabComponents
     {
-        public Text recipeName, cookingTime;
+        public Text recipeName, cookingTime, code;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             recipeName = rootView.Find("DishTitle").GetComponent<Text>();
             cookingTime = rootView.Find("CookingTime").GetComponent<Text>();
+            code = rootView.Find("Code").GetComponent<Text>();
         }
     }
 

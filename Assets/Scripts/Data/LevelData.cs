@@ -10,8 +10,11 @@ public class LevelData : MonoBehaviour
         m_OrderUnCheck,
         m_OrderID;
 
+    private static string m_RecipeCode;
+    
     public static int Money { get => m_Money; set => m_Money = value; }
     public static int OrderCheck { get => m_OrderCheck; set => m_OrderCheck = value; }
     public static int OrderUnCheck { get => m_OrderUnCheck; set => m_OrderUnCheck = value; }
     public static int OrderID { get => m_OrderID; set => m_OrderID = value; }
+    public static string RecipeCode { get => m_RecipeCode; set => m_RecipeCode = value; }
 }

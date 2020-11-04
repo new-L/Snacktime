@@ -1,6 +1,6 @@
 [
   {
-    "name": "Обычная шаура",
+    "name": "Обычная шаурма",
     "ingredients": [
       {"type": "лаваш", "count": "1", "refuse": "required"},
       {"type": "куриное филе", "count": "1", "refuse": "optional"},

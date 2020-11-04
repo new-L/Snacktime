@@ -14,6 +14,7 @@ public class Recipes : MonoBehaviour
 
         if (m_RecipesEvent == null) m_RecipesEvent = new UnityEvent();
         if (recipes.Length != 0) m_RecipesEvent.Invoke();
+
     }
 }
 /*Класс для декода json файла и хранения данных о рецептах игрока*/

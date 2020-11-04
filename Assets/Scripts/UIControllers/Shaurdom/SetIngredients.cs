@@ -9,6 +9,7 @@ public class SetIngredients : MonoBehaviour
     [SerializeField] private RectTransform ingredientsPrefab;
     /*Ресуры игрока*/
     [SerializeField] private Ingredients ingredients;
+    Recipes recipes;
 
 
     /*Вывод данных о ингредиентах*/
