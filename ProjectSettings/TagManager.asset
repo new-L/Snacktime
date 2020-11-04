@@ -9,6 +9,7 @@ TagManager:
   - SceneManager
   - OrderDetail
   - Canvas
+  - RecipeDetailPanel
   layers:
   - Default
   - TransparentFX
