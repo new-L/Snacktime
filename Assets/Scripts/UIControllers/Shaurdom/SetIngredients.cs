@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class SetIngredients : MonoBehaviour
@@ -11,7 +9,6 @@ public class SetIngredients : MonoBehaviour
     [SerializeField] private RectTransform ingredientsPrefab;
     /*Ресуры игрока*/
     [SerializeField] private Ingredients ingredients;
-
 
 
     /*Вывод данных о ингредиентах*/
@@ -25,7 +22,7 @@ public class SetIngredients : MonoBehaviour
         {
             if (model.typeCode.Equals(typeCode))
             {
-                var instance = GameObject.Instantiate(ingredientsPrefab.gameObject) as GameObject;
+                var instance = Instantiate(ingredientsPrefab.gameObject);
                 instance.transform.SetParent(ingredientsContent, false);
                 InitializeResourceItemView(instance, model);
             }
@@ -35,15 +32,17 @@ public class SetIngredients : MonoBehaviour
     {
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.ingredientName.text = ingredients.name;
+        view.ingredientsCode.text = ingredients.code;
     }
 
     public class ResourcePrefabComponents
     {
-        public Text ingredientName;
+        public Text ingredientName, ingredientsCode;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             ingredientName = rootView.Find("Ingredients_Name").GetComponent<Text>();
+            ingredientsCode = rootView.Find("Code").GetComponent<Text>();
         }
     }
 }

@@ -20,7 +20,7 @@ public class Recipes : MonoBehaviour
 [Serializable]
 public class RecipesItem
 {
-    public string name;
+    public string name, code;
     public RecipeIngredients[] ingredients;
     public int cookingtime;
     public int money;

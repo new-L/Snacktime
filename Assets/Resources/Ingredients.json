@@ -60,21 +60,9 @@
     "typeCode": "additionally"
   },
   {
-    "name": "Сосиска",
-    "code": ":sausage:",
-    "type": "Начинка",
-    "typeCode": "filling"
-  },
-  {
-    "name": "Булочка",
-    "code": ":bun:",
-    "type": "Основа",
-    "typeCode": "basis"
-  },
-  {
-    "name": "Горчица",
-    "code": ":mustard:",
-    "type": "Соус",
-    "typeCode": "sauce"
+    "name": "Соль",
+    "code": ":salt:",
+    "type": "Доп",
+    "typeCode": "additionally"
   }
 ]

@@ -63,7 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Controllers\GetName.cs" />
+    <Compile Include="Assets\Scripts\Controllers\IconDragDrop.cs" />
+    <Compile Include="Assets\Scripts\Controllers\IngredientsDragDrop.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
+    <Compile Include="Assets\Scripts\Data\StoveData.cs" />
     <Compile Include="Assets\Scripts\FlexibleGridLayout.cs" />
     <Compile Include="Assets\Scripts\JsonHelper.cs" />
     <Compile Include="Assets\Scripts\LoadData\Ingredients.cs" />

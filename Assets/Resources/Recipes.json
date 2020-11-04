@@ -12,7 +12,8 @@
       {"type": "капуста", "count": "1", "refuse": "optional"}
     ],
     "cookingtime": "100",
-    "money":  "100"
+    "money":  "100",
+    "code": ":shawarma:"
   },
   {
     "name": "Сырная шаурма",
@@ -31,7 +32,8 @@
       {"type": "перец", "count": "1", "refuse": "optional"}
     ],
     "cookingtime": "170",
-    "money": "300"
+    "money": "300",
+    "code": ":chees_shawarma:"
   },
   {
     "name": "Двойная шаурма",
@@ -45,7 +47,8 @@
       {"type": "капуста", "count": "1", "refuse": "optional"}
     ],
     "cookingtime": "140",
-    "money": "200"
+    "money": "200",
+    "code": ":double_shawarma:"
   },
   {
     "name": "Шаурма BOMBA",
@@ -59,20 +62,7 @@
       {"type": "капуста", "count": "2", "refuse": "optional"}
     ],
     "cookingtime": "140",
-    "money": "200"
-  },
-  {
-    "name": "Хот-Дог",
-    "ingredients": [
-      {"type": "сосика", "count": "1", "refuse": "required"},
-      {"type": "булочка для хот-дога", "count": "1", "refuse": "required"},
-      {"type": "кетчуп", "count": "1", "refuse": "optional"},
-      {"type": "горчица", "count": "1", "refuse": "optional"},
-      {"type": "лук", "count": "1", "refuse": "optional"},
-      {"type": "огурец", "count": "1", "refuse": "optional"},
-      {"type": "томат", "count": "1", "refuse": "optional"}
-    ],
-    "cookingtime": "150",
-    "money": "250"
+    "money": "200",
+    "code": ":bomba_shawarma:"
   }
 ]
