@@ -14,6 +14,6 @@ public class RecipeItemStatement : MonoBehaviour
 
     public void OpenRecipeDetails()
     {
-
+        openMenu.OpenPanel("RecipeDetailPanel");
     }
 }
