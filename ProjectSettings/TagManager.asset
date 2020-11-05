@@ -9,6 +9,7 @@ TagManager:
   - SceneManager
   - OrderDetail
   - Canvas
+  - IngredientsContent
   layers:
   - Default
   - TransparentFX

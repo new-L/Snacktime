@@ -7,25 +7,23 @@ public class SetIngredients : MonoBehaviour
     [SerializeField] private RectTransform ingredientsContent;
     /*Префаб ресурсов персонажа*/
     [SerializeField] private RectTransform ingredientsPrefab;
-    /*Ресуры игрока*/
-    [SerializeField] private Ingredients ingredients;
-    Recipes recipes;
-
-
+    private int _newID;
     /*Вывод данных о ингредиентах*/
     public void SetIngredientsList(string typeCode)
     {
+        _newID = 0;
         foreach (Transform child in ingredientsContent)
         {
             Destroy(child.gameObject);
         }
-        foreach (var model in ingredients.ingredients)
+        for(int i = 0; i < Ingredients.ingredients.Length; i++)
         {
-            if (model.typeCode.Equals(typeCode))
+            if (Ingredients.ingredients[i].typeCode.Equals(typeCode))
             {
+                Ingredients.ingredients[i]._id = _newID++;
                 var instance = Instantiate(ingredientsPrefab.gameObject);
                 instance.transform.SetParent(ingredientsContent, false);
-                InitializeResourceItemView(instance, model);
+                InitializeResourceItemView(instance, Ingredients.ingredients[i]);
             }
         }
     }
@@ -34,16 +32,21 @@ public class SetIngredients : MonoBehaviour
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.ingredientName.text = ingredients.name;
         view.ingredientsCode.text = ingredients.code;
+        view.id.text = ingredients._id.ToString();
+        view.sprite.sprite = Resources.Load<Sprite>("Ingridients/" + ingredients.code + "_UI");
     }
 
     public class ResourcePrefabComponents
     {
-        public Text ingredientName, ingredientsCode;
+        public Text ingredientName, ingredientsCode, id;
+        public Image sprite;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             ingredientName = rootView.Find("Ingredients_Name").GetComponent<Text>();
             ingredientsCode = rootView.Find("Code").GetComponent<Text>();
+            id = rootView.Find("IngridientsOnList").GetComponent<Text>();
+            sprite = rootView.Find("IconIngredients").GetComponent<Image>();
         }
     }
 }

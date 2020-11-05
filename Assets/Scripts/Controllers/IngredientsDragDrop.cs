@@ -7,13 +7,15 @@ using UnityEngine.EventSystems;
 public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
-    private RectTransform screen;
+    private RectTransform screen, defaultParent;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
-    public Text code;
+    public Text code, id;
+    private int _currentIngridients;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        defaultParent = GameObject.FindGameObjectWithTag("IngredientsContent").GetComponent<RectTransform>();
         screen = GameObject.FindGameObjectWithTag("Canvas").GetComponent<RectTransform>();
         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
@@ -21,7 +23,11 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        print("OnPointerDown");
+        _currentIngridients = transform.GetSiblingIndex();
+        //for (int i = 0; i < Ingredients.ingredients.Length; i++)
+        //{
+        //    if (Ingredients.ingredients[i].code.Equals(code.text)) _currentIngridients = Ingredients.ingredients[i]._id;
+        //}
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -34,13 +40,14 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
 
     public void OnDrag(PointerEventData eventData)
     {
-        print("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        print("OnEndDrag");
+        transform.SetParent(defaultParent);
+        transform.SetSiblingIndex(_currentIngridients);
+        print(transform.GetSiblingIndex());
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }

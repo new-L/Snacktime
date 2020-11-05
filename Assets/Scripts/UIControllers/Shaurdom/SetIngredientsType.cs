@@ -9,8 +9,6 @@ public class SetIngredientsType : MonoBehaviour
     [SerializeField] private RectTransform m_TypeContent;
     /*Префаб ресурсов персонажа*/
     [SerializeField] private RectTransform m_TypePrefab;
-    /*Ресуры игрока*/
-    [SerializeField] private Ingredients ingredients;
     [SerializeField] private List<string> m_OriginalType;
 
 
@@ -22,7 +20,7 @@ public class SetIngredientsType : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        foreach (var model in ingredients.ingredients)
+        foreach (var model in Ingredients.ingredients)
         { 
             if (!m_OriginalType.Contains(model.type))
             {

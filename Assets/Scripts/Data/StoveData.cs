@@ -8,7 +8,10 @@ public class StoveData : MonoBehaviour, IDropHandler
 {
     [SerializeField] private LevelDataControll _levelControll;
     [SerializeField] private Text timer;
+    [SerializeField] private Image ingredientsImage;
     [SerializeField] private GameObject ingredients;
+
+    private string _readyIngridientsPath;
 
     private static string _code;
     private static bool _blocked;
@@ -17,6 +20,8 @@ public class StoveData : MonoBehaviour, IDropHandler
 
     public static string Code { get => _code; set => _code = value; }
     public static bool Blocked { get => _blocked; set => _blocked = value; }
+
+
 
     public void StartCooking(int timer)
     {
@@ -28,6 +33,8 @@ public class StoveData : MonoBehaviour, IDropHandler
 
     public void StopCooking()
     {
+        ingredientsImage.sprite = Resources.Load<Sprite>(_readyIngridientsPath);
+        SetImageNativeSize(ingredientsImage);
         Blocked = false;
         print("Ready");
     }
@@ -39,13 +46,25 @@ public class StoveData : MonoBehaviour, IDropHandler
     }
 
     public void OnDrop(PointerEventData eventData)
-    { 
-        if(eventData.pointerDrag != null && !Blocked)
+    {
+        _readyIngridientsPath = "Ingridients/Real" + Code + "_Ready";
+        if(eventData.pointerDrag != null && !Blocked && Resources.Load<Sprite>(_readyIngridientsPath) != null)
         {
-            eventData.pointerDrag.SetActive(false);
             ingredients.SetActive(true);
+            ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/Real" + Code);
+            SetImageNativeSize(ingredientsImage);
             StartCooking(10);
         }
         
+    }
+
+
+
+
+    private  void SetImageNativeSize(Image image)
+    {
+        float aspectRatio = image.sprite.rect.width / image.sprite.rect.height;
+        var fitter = image.GetComponent<AspectRatioFitter>();
+        fitter.aspectRatio = aspectRatio;
     }
 }

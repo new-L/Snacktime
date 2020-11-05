@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Ingredients : MonoBehaviour
 {
-    public IngredientsItem[] ingredients;
+    public static IngredientsItem[] ingredients;
     [SerializeField] private UnityEvent m_IngredientsEvent;
 
     void Start()
@@ -22,5 +22,6 @@ public class Ingredients : MonoBehaviour
 [Serializable]
 public class IngredientsItem
 {
+    public int _id;
     public string name, code, type, typeCode;
 }

@@ -3,7 +3,7 @@
     "name": "Обычная шаурма",
     "ingredients": [
       {"type": "лаваш", "count": "1", "refuse": "required"},
-      {"type": "куриное филе", "count": "1", "refuse": "optional"},
+      {"type": "Куриное филе(готовое)", "count": "1", "refuse": "optional"},
       {"type": "помидор", "count": "1", "refuse": "optional"},
       {"type": "огурец", "count": "1", "refuse": "optional"},
       {"type": "кетчуп", "count": "1", "refuse": "optional"},
@@ -13,13 +13,13 @@
     ],
     "cookingtime": "100",
     "money":  "100",
-    "code": ":shawarma:"
+    "code": "[shawarma]"
   },
   {
     "name": "Сырная шаурма",
     "ingredients": [
       {"type": "лаваш", "count": "1", "refuse": "required"},
-      {"type": "куриное филе", "count": "1", "refuse": "optional"},
+      {"type": "Куриное филе(готовое)", "count": "1", "refuse": "optional"},
       {"type": "помидор", "count": "1", "refuse": "optional"},
       {"type": "огурец", "count": "1", "refuse": "optional"},
       {"type": "кетчуп", "count": "1", "refuse": "optional"},
@@ -33,13 +33,13 @@
     ],
     "cookingtime": "170",
     "money": "300",
-    "code": ":chees_shawarma:"
+    "code": "[chees_shawarma]"
   },
   {
     "name": "Двойная шаурма",
     "ingredients": [
       {"type": "лаваш", "count": "1", "refuse": "required"},
-      {"type": "куриное филе", "count": "2", "refuse": "optional"},
+      {"type": "Куриное филе(x2)(готовое)", "count": "1", "refuse": "optional"},
       {"type": "помидор", "count": "1", "refuse": "optional"},
       {"type": "огурец", "count": "1", "refuse": "optional"},
       {"type": "кетчуп", "count": "2", "refuse": "optional"},
@@ -48,13 +48,13 @@
     ],
     "cookingtime": "140",
     "money": "200",
-    "code": ":double_shawarma:"
+    "code": "[double_shawarma]"
   },
   {
     "name": "Шаурма BOMBA",
     "ingredients": [
       {"type": "лаваш", "count": "1", "refuse": "required"},
-      {"type": "куриное филе", "count": "2", "refuse": "optional"},
+      {"type": "Куриное филе(x2)(готовое)", "count": "2", "refuse": "optional"},
       {"type": "помидор", "count": "2", "refuse": "optional"},
       {"type": "огурец", "count": "2", "refuse": "optional"},
       {"type": "кетчуп", "count": "2", "refuse": "optional"},
@@ -63,6 +63,6 @@
     ],
     "cookingtime": "140",
     "money": "200",
-    "code": ":bomba_shawarma:"
+    "code": "[bomba_shawarma]"
   }
 ]

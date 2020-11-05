@@ -1,67 +1,73 @@
 [
   {
   "name": "Лаваш",
-  "code": ":pita:",
+  "code": "[pita]",
   "type": "Основа",
   "typeCode": "basis"
   },
   {
     "name": "Куриное филе",
-    "code": ":chicken_fillet:",
+    "code": "[chicken_fillet]",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Куриное филе(x2)",
+    "code": "[double_chicken_fillet]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Помидор",
-    "code": ":tomato:",
+    "code": "[tomato]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Огурец",
-    "code": ":cucumber:",
+    "code": "[cucumber]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Кетчуп",
-    "code": ":ketchup:",
+    "code": "[ketchup]",
     "type": "Соус",
     "typeCode": "sauce"
   },
   {
     "name": "Майонез",
-    "code": ":mayo:",
+    "code": "[mayo]",
     "type": "Соус",
     "typeCode": "sauce"
   },
   {
     "name": "Капуста",
-    "code": ":cabbage:",
+    "code": "[cabbage]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Сыр",
-    "code": ":cheese:",
+    "code": "[cheese]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Лук",
-    "code": ":onion:",
+    "code": "[onion]",
     "type": "Начинка",
     "typeCode": "filling"
   },
   {
     "name": "Перец",
-    "code": ":pepper:",
+    "code": "[pepper]",
     "type": "Доп",
     "typeCode": "additionally"
   },
   {
     "name": "Соль",
-    "code": ":salt:",
+    "code": "[salt]",
     "type": "Доп",
     "typeCode": "additionally"
   }
