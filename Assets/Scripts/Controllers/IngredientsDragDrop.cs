@@ -24,15 +24,13 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
     public void OnPointerDown(PointerEventData eventData)
     {
         _currentIngridients = transform.GetSiblingIndex();
-        //for (int i = 0; i < Ingredients.ingredients.Length; i++)
-        //{
-        //    if (Ingredients.ingredients[i].code.Equals(code.text)) _currentIngridients = Ingredients.ingredients[i]._id;
-        //}
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        StoveData.Code = code.text;
+        if (!StoveData.Blocked)
+            StoveData.Code = code.text;
+        TableAreaData.Code = code.text;
         transform.SetParent(screen, true);
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
@@ -47,7 +45,6 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
     {
         transform.SetParent(defaultParent);
         transform.SetSiblingIndex(_currentIngridients);
-        print(transform.GetSiblingIndex());
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }

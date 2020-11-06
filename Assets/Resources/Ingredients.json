@@ -12,8 +12,20 @@
     "typeCode": "filling"
   },
   {
+    "name": "Куриное филе(готовое)",
+    "code": "[chicken_fillet_ready]",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
     "name": "Куриное филе(x2)",
     "code": "[double_chicken_fillet]",
+    "type": "Начинка",
+    "typeCode": "filling"
+  },
+  {
+    "name": "Куриное филе(x2)(готовое)",
+    "code": "[double_chicken_fillet_ready]",
     "type": "Начинка",
     "typeCode": "filling"
   },

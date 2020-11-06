@@ -15,18 +15,19 @@ public class StoveData : MonoBehaviour, IDropHandler
 
     private static string _code;
     private static bool _blocked;
+    private static bool _readyToDrag;
 
     private static int _timer;
 
     public static string Code { get => _code; set => _code = value; }
     public static bool Blocked { get => _blocked; set => _blocked = value; }
-
-
+    public static bool ReadyToDrag { get => _readyToDrag; set => _readyToDrag = value; }
 
     public void StartCooking(int timer)
     {
         Blocked = true;
         _timer = timer;
+        ReadyToDrag = false;
         InvokeRepeating("StoveTimer", 0f, 1.2f);
         
     }
@@ -35,33 +36,40 @@ public class StoveData : MonoBehaviour, IDropHandler
     {
         ingredientsImage.sprite = Resources.Load<Sprite>(_readyIngridientsPath);
         SetImageNativeSize(ingredientsImage);
-        Blocked = false;
+        Code = CodeToReady();
+        ReadyToDrag = true;
         print("Ready");
     }
 
     private void StoveTimer()
     {
-        if (_timer < 0) { _timer = 0; StopCooking(); CancelInvoke("StoveTimer"); }
+        if (_timer <= 0) { _timer = 0; StopCooking(); CancelInvoke("StoveTimer"); }
         _levelControll.SetText(timer, _timer--);
     }
 
     public void OnDrop(PointerEventData eventData)
-    {
-        _readyIngridientsPath = "Ingridients/Real" + Code + "_Ready";
-        if(eventData.pointerDrag != null && !Blocked && Resources.Load<Sprite>(_readyIngridientsPath) != null)
+    {        
+        if(eventData.pointerDrag != null && !Blocked)
         {
-            ingredients.SetActive(true);
-            ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/Real" + Code);
-            SetImageNativeSize(ingredientsImage);
-            StartCooking(10);
+            _readyIngridientsPath = "Ingridients/Real" + CodeToReady();
+            if (Resources.Load<Sprite>(_readyIngridientsPath) != null)
+            {
+                ingredients.SetActive(true);
+                ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/Real" + Code);
+                SetImageNativeSize(ingredientsImage);
+                StartCooking(10);
+            }
         }
         
     }
 
 
+    private string CodeToReady()
+    {
+        return Code.Insert(Code.Length - 1, "_ready");
+    }
 
-
-    private  void SetImageNativeSize(Image image)
+    private void SetImageNativeSize(Image image)
     {
         float aspectRatio = image.sprite.rect.width / image.sprite.rect.height;
         var fitter = image.GetComponent<AspectRatioFitter>();

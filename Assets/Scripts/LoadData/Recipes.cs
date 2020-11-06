@@ -31,7 +31,8 @@ public class RecipesItem
 public class RecipeIngredients
 {
     public string 
-        type, 
+        type,
+        typeCode,
         refuse;
     public int count;
 }

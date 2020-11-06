@@ -78,9 +78,9 @@ public class OrderItem
         foreach(var ingredient in ingr)
         {
             if(ingredient.refuse.Equals("optional"))
-                ingredients.Add(new OrderIngredient(ingredient.type, ingredient.refuse, UnityEngine.Random.Range(0, 11) <= 6, ingredient.count));
+                ingredients.Add(new OrderIngredient(ingredient.type, ingredient.refuse, UnityEngine.Random.Range(0, 11) <= 6, ingredient.count, ingredient.typeCode));
             else
-                ingredients.Add(new OrderIngredient(ingredient.type, ingredient.refuse, true, ingredient.count));
+                ingredients.Add(new OrderIngredient(ingredient.type, ingredient.refuse, true, ingredient.count, ingredient.typeCode));
         }        
         cookingtime = item.cookingtime;
         money = item.money;
@@ -90,16 +90,17 @@ public class OrderItem
 [Serializable]
 public class OrderIngredient
 {
-    public string type, refuse;
+    public string type, refuse, typeCode;
     public bool setable;
     public int count;
 
-    public OrderIngredient(string type, string refuse, bool setable, int count)
+    public OrderIngredient(string type, string refuse, bool setable, int count, string typeCode)
     {
         this.type = type;
         this.refuse = refuse;
         this.setable = setable;
         this.count = count;
+        this.typeCode = typeCode;
     }
 }
 

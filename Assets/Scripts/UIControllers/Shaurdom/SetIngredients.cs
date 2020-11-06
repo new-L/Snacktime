@@ -18,7 +18,7 @@ public class SetIngredients : MonoBehaviour
         }
         for(int i = 0; i < Ingredients.ingredients.Length; i++)
         {
-            if (Ingredients.ingredients[i].typeCode.Equals(typeCode))
+            if (Ingredients.ingredients[i].typeCode.Equals(typeCode) && !Ingredients.ingredients[i].code.Contains("ready"))
             {
                 Ingredients.ingredients[i]._id = _newID++;
                 var instance = Instantiate(ingredientsPrefab.gameObject);
