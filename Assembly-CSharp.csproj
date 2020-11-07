@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\LoadData\Order.cs" />
     <Compile Include="Assets\Scripts\LoadData\Recipes.cs" />
     <Compile Include="Assets\Scripts\TimerConverter.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\CheckDishWithOrder.cs" />
     <Compile Include="Assets\Scripts\UIControllers\LevelDataControll.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OpenMenu.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />

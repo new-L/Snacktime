@@ -32,6 +32,7 @@ public class RecipeIngredients
 {
     public string 
         type,
+        nameCode,
         typeCode,
         refuse;
     public int count;

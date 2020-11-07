@@ -2,14 +2,14 @@
   {
     "name": "Обычная шаурма",
     "ingredients": [
-      {"type": "лаваш", "typeCode": "basis" ,"count": "1", "refuse": "required"},
-      {"type": "Куриное филе(готовое)", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "помидор", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "огурец", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "кетчуп", "typeCode": "sauce" ,"count": "1", "refuse": "optional"},
-      {"type": "майонез", "typeCode": "sauce" ,"count": "1", "refuse": "optional"},
-      {"type": "соль", "typeCode": "additionally" ,"count": "1", "refuse": "optional"},
-      {"type": "капуста", "typeCode": "filling" ,"count": "1", "refuse": "optional"}
+      {"type": "лаваш", "nameCode": "[pita]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+      {"type": "Куриное филе(готовое)", "nameCode": "[chicken_fillet_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "помидор", "nameCode": "[tomato]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "nameCode": "[ketchup]","typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+      {"type": "майонез", "nameCode": "[mayo]","typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+      {"type": "соль", "nameCode": "[salt]","typeCode": "additionally" ,"count": "1", "refuse": "optional"},
+      {"type": "капуста", "nameCode": "[cabbage]","typeCode": "filling" ,"count": "1", "refuse": "optional"}
     ],
     "cookingtime": "100",
     "money":  "100",
@@ -18,17 +18,17 @@
   {
     "name": "Сырная шаурма",
     "ingredients": [
-      {"type": "лаваш", "typeCode": "basis" ,"count": "1", "refuse": "required"},
-      {"type": "Куриное филе(готовое)", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "помидор", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "огурец", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "кетчуп", "typeCode": "sauce" ,"count": "1", "refuse": "optional"},
-      {"type": "майонез", "typeCode": "sauce" ,"count": "1", "refuse": "optional"},
-      {"type": "соль", "typeCode": "additionally" ,"count": "1", "refuse": "optional"},
-      {"type": "капуста", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "сыр", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "лук", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "перец", "typeCode": "additionally" ,"count": "1", "refuse": "optional"}
+      {"type": "лаваш", "nameCode": "[pita]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+      {"type": "Куриное филе(готовое)", "nameCode": "[chicken_fillet_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "помидор", "nameCode": "[tomato]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "nameCode": "[ketchup]","typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+      {"type": "майонез", "nameCode": "[mayo]","typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+      {"type": "соль", "nameCode": "[salt]","typeCode": "additionally" ,"count": "1", "refuse": "optional"},
+      {"type": "капуста", "nameCode": "[cabbage]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "сыр", "nameCode": "[cheese]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "лук", "nameCode": "[onion]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "перец", "nameCode": "[pepper]","typeCode": "additionally" ,"count": "1", "refuse": "optional"}
     ],
     "cookingtime": "170",
     "money": "300",
@@ -37,13 +37,13 @@
   {
     "name": "Двойная шаурма",
     "ingredients": [
-      {"type": "лаваш", "typeCode": "basis" ,"count": "1", "refuse": "required"},
-      {"type": "Куриное филе(x2)(готовое)", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "помидор", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "огурец", "typeCode": "filling" ,"count": "1", "refuse": "optional"},
-      {"type": "кетчуп", "typeCode": "sauce" ,"count": "2", "refuse": "optional"},
-      {"type": "майонез", "typeCode": "sauce" ,"count": "2", "refuse": "optional"},
-      {"type": "капуста", "typeCode": "filling" ,"count": "1", "refuse": "optional"}
+      {"type": "лаваш", "nameCode": "[pita]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+      {"type": "Куриное филе(x2)(готовое)", "nameCode": "[double_chicken_fillet_ready]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "помидор", "nameCode": "[tomato]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+      {"type": "кетчуп", "nameCode": "[ketchup]","typeCode": "sauce" ,"count": "2", "refuse": "optional"},
+      {"type": "майонез", "nameCode": "[mayo]","typeCode": "sauce" ,"count": "2", "refuse": "optional"},
+      {"type": "капуста", "nameCode": "[cabbage]","typeCode": "filling" ,"count": "1", "refuse": "optional"}
     ],
     "cookingtime": "140",
     "money": "200",
@@ -52,13 +52,13 @@
   {
     "name": "Шаурма BOMBA",
     "ingredients": [
-      {"type": "лаваш", "typeCode": "basis" ,"count": "1", "refuse": "required"},
-      {"type": "Куриное филе(x2)(готовое)", "typeCode": "filling" ,"count": "2", "refuse": "optional"},
-      {"type": "помидор", "typeCode": "filling" ,"count": "2", "refuse": "optional"},
-      {"type": "огурец", "typeCode": "filling" ,"count": "2", "refuse": "optional"},
-      {"type": "кетчуп", "typeCode": "sauce" ,"count": "2", "refuse": "optional"},
-      {"type": "майонез","typeCode": "sauce" , "count": "2", "refuse": "optional"},
-      {"type": "капуста", "typeCode": "filling" ,"count": "2", "refuse": "optional"}
+      {"type": "лаваш", "nameCode": "[pita]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+      {"type": "Куриное филе(x2)(готовое)", "nameCode": "[double_chicken_fillet_ready]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+      {"type": "помидор", "nameCode": "[tomato]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+      {"type": "огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+      {"type": "кетчуп", "nameCode": "[ketchup]","typeCode": "sauce" ,"count": "2", "refuse": "optional"},
+      {"type": "майонез","nameCode": "[mayo]","typeCode": "sauce" , "count": "2", "refuse": "optional"},
+      {"type": "капуста", "nameCode": "[cabbage]","typeCode": "filling" ,"count": "2", "refuse": "optional"}
     ],
     "cookingtime": "140",
     "money": "200",

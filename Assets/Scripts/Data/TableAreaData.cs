@@ -14,7 +14,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
     public static bool FromStove { get => _fromStove; set => _fromStove = value; }
 
     private string _readyIngridientsPath;
-    [SerializeField] private List<CurrentDish> dish;
+    public List<CurrentDish> dish;
     [SerializeField] private RectTransform _tableArea;
     [SerializeField] private RectTransform _realIngridientsPrefab;
     public void OnDrop(PointerEventData eventData)
@@ -24,8 +24,10 @@ public class TableAreaData : MonoBehaviour, IDropHandler
         {
             if (CheckBasisIngridient())
                 SetItem();
-            else if(GetTypeCode().Equals("basis"))
+            else if (GetTypeCode().Equals("basis"))//если мы добавляем основной компонент
+            {
                 SetItem();
+            }
             else
                 print("Где основной ингридиент?");
 
@@ -126,12 +128,14 @@ public class CurrentDish
 {
     public string code, typeCode;
     public int count;
+    public bool checkable;
 
     public CurrentDish(string code, string typeCode, int count)
     {
         this.code = code;
         this.typeCode = typeCode;
         this.count = count;
+        checkable = false;
     }
 }
 

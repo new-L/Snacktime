@@ -13,12 +13,14 @@ public class SetOrders : MonoBehaviour
     [SerializeField] private Order orders;
 
     public List<OrderItem> actualOrderList;
+    public CheckDishWithOrder check;//delete
 
     public int timer = 100;
     /*Вывод данных о ингредиентах*/
-    public void SetOrdersList()
+    public void SetOrdersList(bool start)
     {
-        actualOrderList.Clear();
+        if(start)
+            actualOrderList.Clear();
         foreach (Transform child in ordersContent)
         {
             Destroy(child.gameObject);
@@ -28,9 +30,10 @@ public class SetOrders : MonoBehaviour
     public void AddOrder(OrderItem model)
     {
         actualOrderList.Add(model);
-        var instance = Instantiate(orderPrefab.gameObject);
+        GameObject instance = Instantiate(orderPrefab.gameObject);
         instance.transform.SetParent(ordersContent, false);
         InitializeOrderItemView(instance, model);
+        check.prefabs.Add(instance);
     }
 
     
