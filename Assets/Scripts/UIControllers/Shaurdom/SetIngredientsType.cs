@@ -36,16 +36,19 @@ public class SetIngredientsType : MonoBehaviour
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.ingredientType.text = ingredients.type;
         view.ingredientsCode.text = ingredients.typeCode;
+        view.type.sprite = Resources.Load<Sprite>("Types/" + ingredients.typeCode);
     }
 
     public class ResourcePrefabComponents
     {
         public Text ingredientType, ingredientsCode;
+        public Image type;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             ingredientType = rootView.Find("TypeIngredient").GetComponent<Text>();
             ingredientsCode = rootView.Find("TypeCode").GetComponent<Text>();
+            type = rootView.Find("TypeIngredientIco").GetComponent<Image>();
         }
     }
 }

@@ -35,17 +35,20 @@ public class SetRecipes : MonoBehaviour
         view.recipeName.text = recipes.name;
         view.cookingTime.text = "~" + recipes.cookingtime.ToString() + " сек.";
         view.code.text = recipes.code;
+        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + recipes.code);
     }
 
     public class ResourcePrefabComponents
     {
         public Text recipeName, cookingTime, code;
+        public Image icon;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             recipeName = rootView.Find("DishTitle").GetComponent<Text>();
             cookingTime = rootView.Find("CookingTime").GetComponent<Text>();
             code = rootView.Find("Code").GetComponent<Text>();
+            icon = rootView.Find("DishIcon").GetComponent<Image>();
         }
     }
 

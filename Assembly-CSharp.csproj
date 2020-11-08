@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Controllers\GetName.cs" />
     <Compile Include="Assets\Scripts\Controllers\IconDragDrop.cs" />
     <Compile Include="Assets\Scripts\Controllers\IngredientsDragDrop.cs" />
+    <Compile Include="Assets\Scripts\Controllers\RecipeItemStatement.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
     <Compile Include="Assets\Scripts\Data\StoveData.cs" />
     <Compile Include="Assets\Scripts\Data\TableAreaData.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Scripts\UIControllers\LevelDataControll.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OpenMenu.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\SetRecipesIngridients.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\DishTypeButton.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\OrderDetail.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetIngredients.cs" />

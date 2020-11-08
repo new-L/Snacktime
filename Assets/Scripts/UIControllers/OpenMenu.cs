@@ -20,6 +20,19 @@ public class OpenMenu : MonoBehaviour
     {
         panel.SetActive(false);
     }
+    
+    public void CloseAllPanel()
+    {
+        for(int i = 0; i < m_Menus.Count; i++)
+        {
+            if (m_Menus[i].tag.Equals("IngredientsTypePanel") || m_Menus[i].tag.Equals("NotePanel"))
+            {
+                if (m_Menus[i].activeSelf)
+                    m_Menus[i].SetActive(true);
+            }
+            else  m_Menus[i].SetActive(false);
+        }
+    }
     public void ClosePanel(string panelTag)
     {
         FindObject(panelTag).SetActive(false);

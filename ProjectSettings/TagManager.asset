@@ -10,6 +10,7 @@ TagManager:
   - OrderDetail
   - Canvas
   - IngredientsContent
+  - RecipeDetailPanel
   layers:
   - Default
   - TransparentFX
