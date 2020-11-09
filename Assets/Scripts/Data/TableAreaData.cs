@@ -23,7 +23,9 @@ public class TableAreaData : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null && Resources.Load<Sprite>(_readyIngridientsPath) != null)
         {
             if (CheckBasisIngridient())
+            {
                 SetItem();
+            }
             else if (GetTypeCode().Equals("basis"))//если мы добавляем основной компонент
             {
                 SetItem();
@@ -81,6 +83,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
             {
                 if (model.code.Equals(Code))
                 {
+                    print(Code);
                     var instance = Instantiate(_realIngridientsPrefab.gameObject);
                     instance.transform.SetParent(_tableArea, false);
                     InitializeRealItemView(instance, model);

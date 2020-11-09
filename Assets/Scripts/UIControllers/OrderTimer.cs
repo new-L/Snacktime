@@ -10,10 +10,12 @@ public class OrderTimer : MonoBehaviour
     [SerializeField] private Text timerText, id;
     [SerializeField] private TimerConverter converter;
     [SerializeField] private OpenMenu openMenu;
+    [SerializeField] private ActualOrderListControll orders;
     private OrderDetail orderDetail;
 
     void Start()
     {
+        orders = FindObjectOfType<ActualOrderListControll>();
         orderDetail = FindObjectOfType<OrderDetail>();
         openMenu = FindObjectOfType<OpenMenu>();
         converter = FindObjectOfType<TimerConverter>();
@@ -28,6 +30,7 @@ public class OrderTimer : MonoBehaviour
         timer--;
         if (timer < 0)
         {
+            orders.DeleteOrder(id.text, gameObject, false);
             timerText.text = "0";
             CancelInvoke("Timer");
         }

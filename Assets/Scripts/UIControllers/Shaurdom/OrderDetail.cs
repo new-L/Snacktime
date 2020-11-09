@@ -7,6 +7,7 @@ public class OrderDetail : MonoBehaviour
 {
     [SerializeField]
     private Text  orderID;
+    [SerializeField] private Image payment;
     /*Контент заказов*/
     [SerializeField] private RectTransform dishContent;
     /*Префаб заказа*/
@@ -17,6 +18,7 @@ public class OrderDetail : MonoBehaviour
     public void SetOrderDetail()
     {
         SetOrderId();
+        
         foreach (Transform child in dishContent)
         {
             Destroy(child.gameObject);
@@ -38,8 +40,10 @@ public class OrderDetail : MonoBehaviour
     public void InitializeDetailItemView(GameObject viewGameObject, OrderItem order)
     {
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
+        payment.sprite = Resources.Load<Sprite>("Payment/" + order.paymentID);
         view.name.text = order.name.ToString();
         view.comment.text = "Комментарий:\n";
+        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + order.code);
         foreach (var model in order.ingredients)
         {
             if (!model.setable)
@@ -53,16 +57,19 @@ public class OrderDetail : MonoBehaviour
     public class ResourcePrefabComponents
     {
         public Text name, comment;
+        public Image icon;
 
         public ResourcePrefabComponents(Transform rootView)
         {
             name = rootView.Find("DishName").GetComponent<Text>();
             comment = rootView.Find("Text").GetComponent<Text>();
+            icon = rootView.Find("DishIcon").GetComponent<Image>();
         }
     }
 
     public void SetOrderId()
     {
         orderID.text = "#" + LevelData.OrderID.ToString("0000");
+        
     }
 }

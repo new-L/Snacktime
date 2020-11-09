@@ -1,9 +1,27 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ActualOrderListControll
+    - CheckDishWithOrder
+    - DishTypeButton
+    - Ingredients
+    - IngredientsDragDrop
+    - LevelDataControll
     - OpenMenu
+    - Order
+    - OrderDetail
+    - OrderTimer
+    - RecipeItemStatement
     - Recipes
+    - SetIngredients
+    - SetIngredientsType
+    - SetOrders
     - SetRecipes
+    - SetRecipesIngridients
+    - StoveData
+    - StoveItemDragDrop
+    - TableAreaData
+    - TimerConverter
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -24,6 +42,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -59,39 +78,77 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11272}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11482}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 11806}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 11932}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12562}
+      Script: {instanceID: 12110}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 13000}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 12290}
+    - Class: 114
+      Script: {instanceID: 12326}
+    - Class: 114
+      Script: {instanceID: 12420}
+    - Class: 114
+      Script: {instanceID: 12430}
+    - Class: 114
+      Script: {instanceID: 12480}
+    - Class: 114
+      Script: {instanceID: 12496}
+    - Class: 114
+      Script: {instanceID: 12526}
+    - Class: 114
+      Script: {instanceID: 12574}
+    - Class: 114
+      Script: {instanceID: 12588}
+    - Class: 114
+      Script: {instanceID: 12598}
+    - Class: 114
+      Script: {instanceID: 12650}
+    - Class: 114
+      Script: {instanceID: 12858}
+    - Class: 114
+      Script: {instanceID: 12870}
+    - Class: 114
+      Script: {instanceID: 12964}
+    - Class: 114
+      Script: {instanceID: 13034}
+    - Class: 114
+      Script: {instanceID: 13104}
+    - Class: 114
+      Script: {instanceID: 13124}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 114
+      Script: {instanceID: 13254}
+    - Class: 114
+      Script: {instanceID: 34402}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -100,8 +157,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -109,6 +164,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -123,6 +180,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -197,10 +260,22 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: 101def62210d21adcbfc843cbeef285e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IngredientsDragDrop
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 7bf1df0bbf07bc7664a9598b34278217
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoveItemDragDrop
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -251,12 +326,6 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: AspectRatioFitter
-  - hash:
-      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -273,6 +342,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 0610bae73dbd1f92af7bfb645bec65e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelData
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -317,10 +392,28 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerConverter
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 0d13c785e00869f49b48c4cb830bb033
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TableAreaData
+  - hash:
+      serializedVersion: 2
+      Hash: 8f0eaf9e44e4581c050fc24c6b43498b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetOrders
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -329,13 +422,19 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: a62b3f82b5fe659087ffd5bbf73c0290
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckDishWithOrder
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 3c09687c1ef8eac9d864434194f12d5e
+      Hash: 4a78b18988b14e60a541f1ffdb918c83
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Recipes
@@ -353,7 +452,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 43b11edfa6c8a6ad8655093788c9a0e9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenMenu
@@ -365,16 +464,46 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 93c8929899d520699385995093903a6b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Order
+  - hash:
+      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 69a6b63af9a6184b8b8479bfabe4e853
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetIngredients
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecipeItemStatement
+  - hash:
+      serializedVersion: 2
+      Hash: 4a854fd83b6bedc67476200e1c754ed6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ingredients
+  - hash:
+      serializedVersion: 2
+      Hash: 9671e2d93ac213969630a1ee845920a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetRecipesIngridients
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -387,6 +516,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IconDragDrop
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -425,10 +560,22 @@ ScriptsOnlyBuild:
     className: SetRecipes
   - hash:
       serializedVersion: 2
+      Hash: 0e4ae9d9c48e6db768f2125c7d1fc832
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrderDetail
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetName
   - hash:
       serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
@@ -449,10 +596,22 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 36dd784b2df390178b168ad233fff4bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetIngredientsType
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 61087dfe109e2f5a017cf147e2f7734d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelDataControll
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -467,6 +626,18 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 16c851e3f6fa5db8c2a42ed1bd8e4d02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoveData
+  - hash:
+      serializedVersion: 2
+      Hash: 99d8ebf5d1476a6e95f236cafbd6aa57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrderTimer
+  - hash:
+      serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -477,6 +648,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 0b9e9d7e678398ab525776233565c451
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DishTypeButton
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -561,6 +738,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 81af54a8b19a2d83d3e5bf0ab8f957d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActualOrderListControll
   platform: 13
   scenePathNames:
   - Assets/Scenes/PreLevel.unity

@@ -8,6 +8,7 @@ public class Order : MonoBehaviour
 {
     public List<OrderItem> orderItem;
     public int orderCount;
+    public float speed;
     private int id;
     [SerializeField] private Recipes recipes;
     [SerializeField] private UnityEvent m_OrderEvent;
@@ -38,7 +39,7 @@ public class Order : MonoBehaviour
                 }
                 if (m_OrderEvent == null) m_OrderEvent = new UnityEvent();
                 m_OrderEvent.Invoke();
-                InvokeRepeating("NewOrder", 7f, 5f);
+                InvokeRepeating("NewOrder", 7f, speed);
                 break;
             }
             
@@ -58,22 +59,24 @@ public class Order : MonoBehaviour
 
     private void AddToOrderList(RecipesItem item, RecipeIngredients[] ingr)
     {
-        orderItem.Add(new OrderItem(item, ingr, id--));
+        orderItem.Add(new OrderItem(item, ingr, id--, item.code, UnityEngine.Random.Range(1, 6)));
     }
 }
 
 [Serializable]
 public class OrderItem
 {
-    public int id;
-    public string name;
+    public int id, paymentID;
+    public string name, code;
     public List<OrderIngredient> ingredients = new List<OrderIngredient>();
     public int cookingtime;
     public int money;
 
-    public OrderItem(RecipesItem item, RecipeIngredients[] ingr, int id)
+    public OrderItem(RecipesItem item, RecipeIngredients[] ingr, int id, string code, int payment)
     {
         this.id = id;
+        paymentID = payment;
+        this.code = code;
         name = item.name;
         foreach(var ingredient in ingr)
         {

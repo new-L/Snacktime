@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelData : MonoBehaviour
 {
+    [SerializeField] private LevelDataControll _levelDataControll;
     private static int 
         m_Money,
         m_OrderCheck,
@@ -17,4 +18,6 @@ public class LevelData : MonoBehaviour
     public static int OrderUnCheck { get => m_OrderUnCheck; set => m_OrderUnCheck = value; }
     public static int OrderID { get => m_OrderID; set => m_OrderID = value; }
     public static string RecipeCode { get => m_RecipeCode; set => m_RecipeCode = value; }
+
+
 }

@@ -53,7 +53,7 @@
     "name": "Шаурма BOMBA",
     "ingredients": [
       {"type": "лаваш", "nameCode": "[pita]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
-      {"type": "Куриное филе(x2)(готовое)", "nameCode": "[double_chicken_fillet_ready]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+      {"type": "Куриное филе(x2)(готовое)", "nameCode": "[double_chicken_fillet_ready]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
       {"type": "помидор", "nameCode": "[tomato]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
       {"type": "огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
       {"type": "кетчуп", "nameCode": "[ketchup]","typeCode": "sauce" ,"count": "2", "refuse": "optional"},

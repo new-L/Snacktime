@@ -17,6 +17,16 @@ public class LevelDataControll : MonoBehaviour
         SetText(orderUnCheck, LevelData.OrderUnCheck = 0);
     }
 
+    public void Add(string type, int info)
+    {
+        switch (type)
+        {
+            case "money": SetText(money, info); break;
+            case "complete": SetText(orderCheck, info); break;
+            case "failed": SetText(orderUnCheck, info); break;
+        }
+    }
+
     public void SetText(Text item, int value)
     {
         item.text = value.ToString();
