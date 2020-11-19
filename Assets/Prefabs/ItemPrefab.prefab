@@ -242,8 +242,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 1765915062785398372}
   code: {fileID: 4023897900113191501}
+  type: {fileID: 1765915063159610742}
   m_SetType: {fileID: 0}
   openMenu: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &1765915063159610740
 GameObject:
   m_ObjectHideFlags: 0

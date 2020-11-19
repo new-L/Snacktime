@@ -33,12 +33,18 @@ public class SetIngredients : MonoBehaviour
         view.ingredientName.text = ingredients.name;
         view.ingredientsCode.text = ingredients.code;
         view.id.text = ingredients._id.ToString();
+        view.count.text = ingredients.count.ToString();
+        if (ingredients.count <= 0)
+        {
+            viewGameObject.GetComponent<Image>().color = new Color32(164, 164, 164, 255);
+            viewGameObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
         view.sprite.sprite = Resources.Load<Sprite>("Ingridients/" + ingredients.code + "_UI");
     }
 
     public class ResourcePrefabComponents
     {
-        public Text ingredientName, ingredientsCode, id;
+        public Text ingredientName, ingredientsCode, id, count;
         public Image sprite;
 
         public ResourcePrefabComponents(Transform rootView)
@@ -47,6 +53,7 @@ public class SetIngredients : MonoBehaviour
             ingredientsCode = rootView.Find("Code").GetComponent<Text>();
             id = rootView.Find("IngridientsOnList").GetComponent<Text>();
             sprite = rootView.Find("IconIngredients").GetComponent<Image>();
+            count = rootView.Find("Count").GetComponent<Text>();
         }
     }
 }

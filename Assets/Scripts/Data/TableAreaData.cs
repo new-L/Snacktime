@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class TableAreaData : MonoBehaviour, IDropHandler
 {
+    [SerializeField] private SetIngredients setIngredients;
+
     private static string _code;
     private static bool _fromStove;
 
@@ -25,10 +27,28 @@ public class TableAreaData : MonoBehaviour, IDropHandler
             if (CheckBasisIngridient())
             {
                 SetItem();
+                for (int i = 0; i < Ingredients.ingredients.Length; i++)
+                {
+                    if (Ingredients.ingredients[i].code.Equals(_code) && !Ingredients.ingredients[i].code.Contains("ready"))
+                    {
+                        Ingredients.ingredients[i].count -= 1;
+                        setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                        break;
+                    }
+                }
             }
             else if (GetTypeCode().Equals("basis"))//если мы добавляем основной компонент
             {
                 SetItem();
+                for (int i = 0; i < Ingredients.ingredients.Length; i++)
+                {
+                    if (Ingredients.ingredients[i].code.Equals(_code))
+                    {
+                        Ingredients.ingredients[i].count -= 1;
+                        setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                        break;
+                    }
+                }
             }
             else
                 print("Где основной ингридиент?");

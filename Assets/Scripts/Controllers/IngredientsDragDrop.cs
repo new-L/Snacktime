@@ -34,6 +34,7 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
         transform.SetParent(screen, true);
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+        print(code.text);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -46,6 +47,9 @@ public class IngredientsDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDra
         transform.SetParent(defaultParent);
         transform.SetSiblingIndex(_currentIngridients);
         canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+        for(int i = 0; i < Ingredients.ingredients.Length; i++)
+            if(Ingredients.ingredients[i].code.Equals(code.text) && Ingredients.ingredients[i].count > 0)
+                canvasGroup.blocksRaycasts = true;
+        print(code.text);
     }
 }

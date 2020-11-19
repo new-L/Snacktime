@@ -12,7 +12,7 @@ public class ActualOrderListControll : MonoBehaviour
     {
         if (!complete)
         {
-            levelControll.Add("failed", LevelData.OrderUnCheck + 1);
+            levelControll.Add("failed", LevelData.OrderUnCheck += 1);
         }
         for(int i = 0; i < orders.actualOrderList.Count; i++)
         {

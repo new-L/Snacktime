@@ -10,6 +10,7 @@ public class StoveData : MonoBehaviour, IDropHandler
     [SerializeField] private Text timer;
     [SerializeField] private Image ingredientsImage;
     [SerializeField] private GameObject ingredients;
+    [SerializeField] private SetIngredients setIngredients;
 
     private string _readyIngridientsPath;
 
@@ -57,6 +58,15 @@ public class StoveData : MonoBehaviour, IDropHandler
                 ingredients.SetActive(true);
                 ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/Real" + Code);
                 SetImageNativeSize(ingredientsImage);
+                for (int i = 0; i < Ingredients.ingredients.Length; i++)
+                {
+                    if (Ingredients.ingredients[i].code.Equals(Code))
+                    {
+                        Ingredients.ingredients[i].count -= 1;
+                        setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                        break;
+                    }
+                }
                 StartCooking(10);
             }
         }
