@@ -3,13 +3,15 @@
   "name": "Лаваш",
   "code": "[pita]",
   "type": "Основа",
-  "typeCode": "basis"
+  "typeCode": "basis",
+  "cost": "10"
   },
   {
     "name": "Куриное филе",
     "code": "[chicken_fillet]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "30"
   },
   {
     "name": "Куриное филе(готовое)",
@@ -21,7 +23,8 @@
     "name": "Куриное филе(x2)",
     "code": "[double_chicken_fillet]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "60"
   },
   {
     "name": "Куриное филе(x2)(готовое)",
@@ -33,54 +36,63 @@
     "name": "Помидор",
     "code": "[tomato]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "5"
   },
   {
     "name": "Огурец",
     "code": "[cucumber]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "5"
   },
   {
     "name": "Кетчуп",
     "code": "[ketchup]",
     "type": "Соус",
-    "typeCode": "sauce"
+    "typeCode": "sauce",
+    "cost": "5"
   },
   {
     "name": "Майонез",
     "code": "[mayo]",
     "type": "Соус",
-    "typeCode": "sauce"
+    "typeCode": "sauce",
+    "cost": "5"
   },
   {
     "name": "Капуста",
     "code": "[cabbage]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "5"
   },
   {
     "name": "Сыр",
     "code": "[cheese]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "5"
   },
   {
     "name": "Лук",
     "code": "[onion]",
     "type": "Начинка",
-    "typeCode": "filling"
+    "typeCode": "filling",
+    "cost": "5"
   },
   {
     "name": "Перец",
     "code": "[pepper]",
     "type": "Доп",
-    "typeCode": "additionally"
+    "typeCode": "additionally",
+    "cost": "5"
   },
   {
     "name": "Соль",
     "code": "[salt]",
     "type": "Доп",
-    "typeCode": "additionally"
+    "typeCode": "additionally",
+    "cost": "5"
   }
 ]

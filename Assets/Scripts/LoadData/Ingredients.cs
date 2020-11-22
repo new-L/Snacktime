@@ -24,6 +24,6 @@ public class Ingredients : MonoBehaviour
 [Serializable]
 public class IngredientsItem
 {
-    public int _id, count;
+    public int _id, count, cost;
     public string name, code, type, typeCode;
 }
