@@ -10,7 +10,7 @@ public class SetStoreItems : MonoBehaviour
     /*Префаб ресурсов персонажа*/
     [SerializeField] private RectTransform m_ItemPrefab;
 
-
+    [SerializeField] private Text currentPrice;
 
     /*Вывод данных о ингредиентах*/
     public void SetStoreIngredients()
@@ -19,6 +19,7 @@ public class SetStoreItems : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+        currentPrice.text = 0.ToString();
         foreach (var model in Ingredients.ingredients)
         {
             if (!model.code.Contains("_ready]"))

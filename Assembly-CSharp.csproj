@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetOrders.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetRecipes.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetStoreItems.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\Shaurdom\Store.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoreItem.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoveItemDragDrop.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
