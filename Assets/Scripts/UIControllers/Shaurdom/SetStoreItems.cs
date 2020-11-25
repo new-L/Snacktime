@@ -34,7 +34,7 @@ public class SetStoreItems : MonoBehaviour
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.ingredientName.text = ingredients.name;
         view.ingredientCost.text = ingredients.cost.ToString() + "$";
-        view.code.text = ingredients.typeCode;
+        view.code.text = ingredients.code;
         view.icon.sprite = Resources.Load<Sprite>("Ingridients/" + ingredients.code + "_UI");
     }
 

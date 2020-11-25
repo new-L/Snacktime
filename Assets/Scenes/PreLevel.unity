@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 77914902}
   m_Layer: 5
   m_Name: Cost
-  m_TagString: Untagged
+  m_TagString: StorePanel_Cost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

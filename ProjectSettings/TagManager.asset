@@ -12,6 +12,7 @@ TagManager:
   - IngredientsContent
   - RecipeDetailPanel
   - NoteTypeText
+  - StorePanel_Cost
   layers:
   - Default
   - TransparentFX
