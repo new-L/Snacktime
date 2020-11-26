@@ -16,7 +16,7 @@ public class Store : MonoBehaviour
     }
     public void Pay()
     {
-        if(StoreData.CurrentPrice <= LevelData.Money && StoreData.CurrentPrice > 0)
+        if(StoreData.CurrentPrice <= LevelData.Money && StoreData.CurrentPrice > 0 && LevelData.Money > 0)
         {
             LevelData.Money -= StoreData.CurrentPrice;
             StoreData.CurrentPrice = 0;
@@ -25,6 +25,11 @@ public class Store : MonoBehaviour
             storeTimer.text = timer.ToString();
             dataControll.SetText(levelMoney, LevelData.Money);
             InvokeRepeating("StoreTimer", 0f, 1.1f);
+        }
+        else
+        {
+            StoreData.CurrentPrice = 0;
+            StoreData.buscket.Clear();
         }
     }
 

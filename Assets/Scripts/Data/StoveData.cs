@@ -23,11 +23,12 @@ public class StoveData : MonoBehaviour, IDropHandler
     public static string Code { get => _code; set => _code = value; }
     public static bool Blocked { get => _blocked; set => _blocked = value; }
     public static bool ReadyToDrag { get => _readyToDrag; set => _readyToDrag = value; }
+    public static int Timer { get => _timer; set => _timer = value; }
 
     public void StartCooking(int timer)
     {
         Blocked = true;
-        _timer = timer;
+        Timer = timer;
         ReadyToDrag = false;
         InvokeRepeating("StoveTimer", 0f, 1.2f);
         
@@ -44,8 +45,8 @@ public class StoveData : MonoBehaviour, IDropHandler
 
     private void StoveTimer()
     {
-        if (_timer <= 0) { _timer = 0; StopCooking(); CancelInvoke("StoveTimer"); }
-        _levelControll.SetText(timer, _timer--);
+        if (Timer <= 0) { Timer = 0; StopCooking(); CancelInvoke("StoveTimer"); }
+        _levelControll.SetText(timer, Timer--);
     }
 
     public void OnDrop(PointerEventData eventData)

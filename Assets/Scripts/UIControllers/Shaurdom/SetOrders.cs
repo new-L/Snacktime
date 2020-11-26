@@ -14,8 +14,12 @@ public class SetOrders : MonoBehaviour
 
     public List<OrderItem> actualOrderList;
     public CheckDishWithOrder check;//delete
+    private void Start()
+    {
+        actualOrderList.Clear();
+    }
 
-    public int timer = 100;
+
     /*Вывод данных о ингредиентах*/
     public void SetOrdersList(bool start)
     {

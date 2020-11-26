@@ -66,7 +66,6 @@
     <Compile Include="Assets\Scripts\Controllers\ActualOrderListControll.cs" />
     <Compile Include="Assets\Scripts\Controllers\Final.cs" />
     <Compile Include="Assets\Scripts\Controllers\GetName.cs" />
-    <Compile Include="Assets\Scripts\Controllers\IconDragDrop.cs" />
     <Compile Include="Assets\Scripts\Controllers\IngredientsDragDrop.cs" />
     <Compile Include="Assets\Scripts\Controllers\RecipeItemStatement.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Assets\Scripts\Data\TableAreaData.cs" />
     <Compile Include="Assets\Scripts\FlexibleGridLayout.cs" />
     <Compile Include="Assets\Scripts\JsonHelper.cs" />
+    <Compile Include="Assets\Scripts\JumpToScene.cs" />
     <Compile Include="Assets\Scripts\LoadData\Ingredients.cs" />
     <Compile Include="Assets\Scripts\LoadData\Order.cs" />
     <Compile Include="Assets\Scripts\LoadData\Recipes.cs" />
