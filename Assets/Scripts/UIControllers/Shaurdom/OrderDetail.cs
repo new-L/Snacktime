@@ -43,7 +43,7 @@ public class OrderDetail : MonoBehaviour
         payment.sprite = Resources.Load<Sprite>("Payment/" + order.paymentID);
         view.name.text = order.name.ToString();
         view.comment.text = "Комментарий:\n";
-        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + order.code);
+        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + LevelData.LevelCode + "/" + order.code);
         foreach (var model in order.ingredients)
         {
             if (!model.setable)

@@ -1,0 +1,12 @@
+[
+{
+    "name": "Shaurdom",
+    "code": "shaurdom",
+    "locked": "unlocked"
+},
+{
+    "name": "Столовая",
+    "code": "dining",
+    "locked": "locked"
+}
+]

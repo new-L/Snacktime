@@ -21,7 +21,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
     [SerializeField] private RectTransform _realIngridientsPrefab;
     public void OnDrop(PointerEventData eventData)
     {
-        _readyIngridientsPath = "Ingridients/Real" + Code;
+        _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + Code;
         if (eventData.pointerDrag != null && Resources.Load<Sprite>(_readyIngridientsPath) != null)
         {
             if (CheckBasisIngridient())

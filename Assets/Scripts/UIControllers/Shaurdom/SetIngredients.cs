@@ -39,7 +39,7 @@ public class SetIngredients : MonoBehaviour
             viewGameObject.GetComponent<Image>().color = new Color32(164, 164, 164, 255);
             viewGameObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
-        view.sprite.sprite = Resources.Load<Sprite>("Ingridients/" + ingredients.code + "_UI");
+        view.sprite.sprite = Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/"+ ingredients.code + "_UI");
     }
 
     public class ResourcePrefabComponents

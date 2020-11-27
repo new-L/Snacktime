@@ -11,7 +11,7 @@ public class Ingredients : MonoBehaviour
 
     void Start()
     {
-        TextAsset temp = Resources.Load<TextAsset>("Ingredients");
+        TextAsset temp = Resources.Load<TextAsset>("Data/" + LevelData.LevelCode + "/Ingredients");
         string json = JsonHelper.fixJson(temp.text);
         ingredients = JsonHelper.FromJson<IngredientsItem>(json);
         for (int i = 0; i < ingredients.Length; i++)

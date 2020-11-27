@@ -25,7 +25,7 @@ public class SetIngredientsType : MonoBehaviour
             if (!m_OriginalType.Contains(model.type))
             {
                 m_OriginalType.Add(model.type);
-                var instance = GameObject.Instantiate(m_TypePrefab.gameObject) as GameObject;
+                var instance = Instantiate(m_TypePrefab.gameObject);
                 instance.transform.SetParent(m_TypeContent, false);
                 InitializeResourceItemView(instance, model);
             }

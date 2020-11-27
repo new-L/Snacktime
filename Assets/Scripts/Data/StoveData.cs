@@ -53,11 +53,11 @@ public class StoveData : MonoBehaviour, IDropHandler
     {        
         if(eventData.pointerDrag != null && !Blocked)
         {
-            _readyIngridientsPath = "Ingridients/Real" + CodeToReady();
+            _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + CodeToReady();
             if (Resources.Load<Sprite>(_readyIngridientsPath) != null)
             {
                 ingredients.SetActive(true);
-                ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/Real" + Code);
+                ingredientsImage.sprite = Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/Real" + Code);
                 SetImageNativeSize(ingredientsImage);
                 for (int i = 0; i < Ingredients.ingredients.Length; i++)
                 {

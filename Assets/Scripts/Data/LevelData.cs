@@ -13,6 +13,7 @@ public class LevelData : MonoBehaviour
 
     private static string m_CurrentNoteType;
     private static string m_RecipeCode;
+    private static string m_LevelCode;
     
     public static int Money { get => m_Money; set => m_Money = value; }
     public static int OrderCheck { get => m_OrderCheck; set => m_OrderCheck = value; }
@@ -20,4 +21,5 @@ public class LevelData : MonoBehaviour
     public static int OrderID { get => m_OrderID; set => m_OrderID = value; }
     public static string RecipeCode { get => m_RecipeCode; set => m_RecipeCode = value; }
     public static string CurrentNoteType { get => m_CurrentNoteType; set => m_CurrentNoteType = value; }
+    public static string LevelCode { get => m_LevelCode; set => m_LevelCode = value; }
 }

@@ -35,7 +35,7 @@ public class SetRecipes : MonoBehaviour
         view.recipeName.text = recipes.name;
         view.cookingTime.text = "~" + recipes.cookingtime.ToString() + " сек.";
         view.code.text = recipes.code;
-        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + recipes.code);
+        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + LevelData.LevelCode +"/"+ recipes.code);
     }
 
     public class ResourcePrefabComponents

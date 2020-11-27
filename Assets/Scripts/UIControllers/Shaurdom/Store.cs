@@ -24,6 +24,7 @@ public class Store : MonoBehaviour
             storeButton.enabled = false;
             storeTimer.text = timer.ToString();
             dataControll.SetText(levelMoney, LevelData.Money);
+            timer = 10;
             InvokeRepeating("StoreTimer", 0f, 1.1f);
         }
         else

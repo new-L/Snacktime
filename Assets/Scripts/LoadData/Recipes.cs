@@ -8,7 +8,7 @@ public class Recipes : MonoBehaviour
     [SerializeField] private UnityEvent m_RecipesEvent;
     void Start()
     {
-        TextAsset temp = Resources.Load<TextAsset>("Recipes");
+        TextAsset temp = Resources.Load<TextAsset>("Data/" + LevelData.LevelCode + "/Recipes");
         string json = JsonHelper.fixJson(temp.text);
         recipes = JsonHelper.FromJson<RecipesItem>(json);
 

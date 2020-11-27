@@ -41,7 +41,7 @@ public class SetRecipesIngridients : MonoBehaviour
         view.numberIngridient.text = (++index).ToString() + ")";
         view.ingridientCount.text = "x" + ingridient.count.ToString();
         view.ingridientName.text = ingridient.type;
-        view.icon.sprite = Resources.Load<Sprite>("Ingridients/" + ingridient.nameCode + "_UI");
+        view.icon.sprite = Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/" + ingridient.nameCode + "_UI");
     }
 
     public class ResourcePrefabComponents
