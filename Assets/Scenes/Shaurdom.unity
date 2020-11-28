@@ -6756,6 +6756,7 @@ GameObject:
   - component: {fileID: 1709454101}
   - component: {fileID: 1709454102}
   - component: {fileID: 1709454103}
+  - component: {fileID: 1709454104}
   m_Layer: 0
   m_Name: SceneManage
   m_TagString: SceneManager
@@ -6840,12 +6841,26 @@ MonoBehaviour:
   _menus: {fileID: 994203785}
   _PausePanel: {fileID: 1856806898}
   _FinalPanel: {fileID: 1884015468}
+  loadData: {fileID: 1709454104}
   _title: {fileID: 864160382}
   _completeTask: {fileID: 1166981062}
   _failedTask: {fileID: 155431281}
   _money: {fileID: 1203677532}
   _background: {fileID: 1884015470}
   precent: 40
+--- !u!114 &1709454104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709454098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a9dc11d461b99459a932ab7ee17122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels: []
 --- !u!1 &1714412763
 GameObject:
   m_ObjectHideFlags: 0

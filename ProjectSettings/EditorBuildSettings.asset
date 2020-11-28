@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LevelMenu.unity
+    guid: 5752a75922e32264f8a4808733cf6d59
+  - enabled: 1
     path: Assets/Scenes/Shaurdom.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/LevelMenu.unity
-    guid: 5752a75922e32264f8a4808733cf6d59
+    path: Assets/Scenes/Dining.unity
+    guid: b6ef4ad3528129d458a004022f7849b2
   m_configObjects: {}

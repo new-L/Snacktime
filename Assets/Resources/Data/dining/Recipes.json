@@ -1,0 +1,76 @@
+[
+    {
+      "name": "Борщ",
+      "ingredients": [
+        {"type": "Вода для супа", "nameCode": "[water]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+        {"type": "Говядина", "nameCode": "[beef]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+        {"type": "Свекла", "nameCode": "[beet]","typeCode": "filling" ,"count": "1", "refuse": "required"},
+        {"type": "Морковь", "nameCode": "[carrot]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Лук", "nameCode": "[onion]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Капуста", "nameCode": "[cabbage]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Картофель", "nameCode": "[potatoe]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Соль", "nameCode": "[salt]","typeCode": "additionally" ,"count": "1", "refuse": "optional"}
+      ],
+      "cookingtime": "90",
+      "money":  "75",
+      "code": "[borscht]"
+    },
+    {
+        "name": "Суп",
+        "ingredients": [
+          {"type": "Вода для супа", "nameCode": "[water]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Картофель", "nameCode": "[potatoe]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Лапша", "nameCode": "[noodles]","typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Морковь", "nameCode": "[carrot]","typeCode": "filling" ,"count": "3", "refuse": "optional"},
+          {"type": "Лук", "nameCode": "[onion]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+          {"type": "Соль", "nameCode": "[salt]","typeCode": "additionally" ,"count": "1", "refuse": "optional"}
+        ],
+        "cookingtime": "75",
+        "money":  "70",
+        "code": "[soup]"
+      },
+      {
+        "name": "Окрошка",
+        "ingredients": [
+          {"type": "Кефир", "nameCode": "[kefir]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Редис", "nameCode": "[radish]" ,"typeCode": "filling" ,"count": "2", "refuse": "required"},
+          {"type": "Картофель", "nameCode": "[potatoe]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Колбаса", "nameCode": "[sausage]","typeCode": "filling" ,"count": "1", "refuse": "optional"}
+        ],
+        "cookingtime": "75",
+        "money":  "60",
+        "code": "[okroshka]"
+      },
+      {
+        "name": "Пюре с котлетой",
+        "ingredients": [
+          {"type": "Вареный картофель", "nameCode": "[potatoe_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Котлета", "nameCode": "[cutlet_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"}
+        ],
+        "cookingtime": "40",
+        "money":  "50",
+        "code": "[puree]"
+      },
+      {
+        "name": "Макароны с соусом",
+        "ingredients": [
+          {"type": "Макароны", "nameCode": "[pasts]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Тирияки", "nameCode": "[tiriyaki]" ,"typeCode": "sauce" ,"count": "1", "refuse": "required"}
+        ],
+        "cookingtime": "40",
+        "money":  "50",
+        "code": "[pasta]"
+      },
+      {
+        "name": "Кекс",
+        "ingredients": [
+          {"type": "Мука", "nameCode": "[dough]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Сахар", "nameCode": "[sugar]" ,"typeCode": "additionally" ,"count": "1", "refuse": "optional"},
+          {"type": "Ваниль", "nameCode": "[vanilla]" ,"typeCode": "additionally" ,"count": "3", "refuse": "optional"},
+          {"type": "Яйцо", "nameCode": "[egg]" ,"typeCode": "filling" ,"count": "2", "refuse": "required"}
+        ],
+        "cookingtime": "100",
+        "money":  "80",
+        "code": "[cake]"
+      }
+]

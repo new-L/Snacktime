@@ -1,0 +1,150 @@
+[
+    {
+        "name": "Вода для супа",
+        "code": "[water]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "10"
+    },
+    {
+        "name": "Говядина",
+        "code": "[beef]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "20"
+    },
+    {
+        "name": "Свекла",
+        "code": "[beet]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Морковь",
+        "code": "[carrot]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Лук",
+        "code": "[onion]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Капуста",
+        "code": "[cabbage]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Картофель",
+        "code": "[potatoe]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Вареный картофель",
+        "code": "[potatoe_ready]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Соль",
+        "code": "[salt]",
+        "type": "Доп",
+        "typeCode": "additionally",
+        "cost": "5"
+    },
+    {
+        "name": "Лапша",
+        "code": "[noodles]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "15"
+    },
+    {
+        "name": "Редис",
+        "code": "[radish]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Кефир",
+        "code": "[kefir]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "10"
+    },
+    {
+        "name": "Яйцо",
+        "code": "[egg]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Колбаса",
+        "code": "[sausage]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Замороженая котлета",
+        "code": "[cutlet]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Котлета",
+        "code": "[cutlet_ready]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Макароны",
+        "code": "[pasts]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "30"
+    },
+    {
+        "name": "Тирияки",
+        "code": "[tiriyaki]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "10"
+    },
+    {
+        "name": "Мука",
+        "code": "[dough]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "10"
+    },
+    {
+        "name": "Сахар",
+        "code": "[sugar]",
+        "type": "Доп",
+        "typeCode": "additionally",
+        "cost": "20"
+    },
+    {
+        "name": "Ваниль",
+        "code": "[vanilla]",
+        "type": "Доп",
+        "typeCode": "additionally",
+        "cost": "5"
+    }
+]
+  

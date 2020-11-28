@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />
     <Compile Include="Assets\Scripts\UIControllers\SetRecipesIngridients.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\DishTypeButton.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\Shaurdom\LoadLevelData.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\OrderDetail.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetIngredients.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetIngredientsType.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\Store.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoreItem.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoveItemDragDrop.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\dining\StoveDining.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

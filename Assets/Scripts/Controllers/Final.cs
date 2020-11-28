@@ -10,6 +10,7 @@ public class Final : MonoBehaviour
     [SerializeField] private SetOrders orders;
     [SerializeField] private OpenMenu _menus;
     [SerializeField] private GameObject _PausePanel, _FinalPanel;
+    [SerializeField] private LoadLevelData loadData;
 
     [SerializeField]
     private Text
@@ -47,6 +48,16 @@ public class Final : MonoBehaviour
             {
                 _title.text = "Ты победил!";
                 _background.sprite = Resources.Load<Sprite>("FinalPanelWin");
+                loadData.Load();
+                for (int i = 0; i < loadData.levels.Length; i++)
+                {
+                    if(loadData.levels[i].code.Equals(LevelData.LevelCode))
+                    {
+                        loadData.levels[i + 1].locked = "unlocked";
+                        break;
+                    }
+                }
+                loadData.Save();
             }
             else
             {

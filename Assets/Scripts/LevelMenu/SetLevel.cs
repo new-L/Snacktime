@@ -18,6 +18,7 @@ public class SetLevel : MonoBehaviour
 
     public void Load()
     {
+        levels = null;
         string levelsJSON = PlayerPrefs.GetString("levels");
         levels = JsonHelper.FromJson<Levels>(levelsJSON);
     }
