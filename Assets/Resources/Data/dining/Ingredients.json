@@ -51,8 +51,8 @@
     {
         "name": "Вареный картофель",
         "code": "[potatoe_ready]",
-        "type": "Начинка",
-        "typeCode": "filling",
+        "type": "Основа",
+        "typeCode": "basis",
         "cost": "5"
     },
     {

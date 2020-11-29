@@ -37,6 +37,10 @@ public class TableAreaData : MonoBehaviour, IDropHandler
                     }
                 }
             }
+            else if (GetTypeCode().Equals("basis") && _code.Contains("_ready"))
+            {
+                SetItem();
+            }
             else if (GetTypeCode().Equals("basis"))//если мы добавляем основной компонент
             {
                 SetItem();
