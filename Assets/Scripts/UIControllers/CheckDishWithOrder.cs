@@ -12,9 +12,11 @@ public class CheckDishWithOrder : MonoBehaviour
     [SerializeField] private List<CurrentDish> currentDishes;
     [SerializeField] public LevelDataControll levelDataControll;
     [SerializeField] public Transform tableArea;
+    [SerializeField] private GameObject coffee;
     public List<GameObject> prefabs;
     private bool _complete;
-    //ЗАГАВНОКОЖЕНО ПО САМЫЕ ЯЙЦА
+    int tempID;
+    //ЗАГОВНОКОЖЕНО ПО САМЫЕ ЯЙЦА
     public void CheckOrder()
     {
         _complete = false;
@@ -25,9 +27,13 @@ public class CheckDishWithOrder : MonoBehaviour
             foreach (var model in item.ingredients)
             {
                 if (model.setable)
+                {
                     currentDishes.Add(new CurrentDish(model.nameCode, "", model.count));
+                }
             }
-            if(CheckIngridients())//Если находим в списке активных заказов наше приготовленное блюдо
+            if (LevelData.LevelCode.Equals("eldoroga"))
+                tempID = item.id;
+            if (CheckIngridients())//Если находим в списке активных заказов наше приготовленное блюдо
             {
                 for(int i = 0; i < prefabs.Count; i++)
                 {
@@ -50,6 +56,12 @@ public class CheckDishWithOrder : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+        if (LevelData.LevelCode.Equals("eldoroga"))
+        {
+            tempID = 0;
+            CoffeData.IsCoffee = false;
+            coffee.SetActive(false);
+        }
         dish.dish.Clear();
         final.FinalControll();
     }
@@ -59,6 +71,7 @@ public class CheckDishWithOrder : MonoBehaviour
 
     private bool CheckIngridients()
     {
+        
         if (dish.dish.Count == currentDishes.Count)
         {
             foreach (var item in dish.dish)
@@ -76,6 +89,17 @@ public class CheckDishWithOrder : MonoBehaviour
         {
             print("Мало ингридиентов");
             return false;
+        }
+
+        if (LevelData.LevelCode.Equals("eldoroga"))
+        {
+            foreach (var item in orders.actualAdditionalOrder)
+            {
+                if (item.id == tempID && !CoffeData.IsCoffee)
+                {
+                    return false;
+                }
+            }
         }
 
         foreach (var item in currentDishes)

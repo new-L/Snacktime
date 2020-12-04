@@ -8,5 +8,10 @@
     "name": "Столовая",
     "code": "dining",
     "locked": "locked"
-}
+},
+  {
+    "name": "El'Doroga",
+    "code": "eldoroga",
+    "locked": "unlocked"
+  }
 ]

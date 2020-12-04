@@ -53,8 +53,11 @@ public class Final : MonoBehaviour
                 {
                     if(loadData.levels[i].code.Equals(LevelData.LevelCode))
                     {
-                        loadData.levels[i + 1].locked = "unlocked";
-                        break;
+                        if (i + 1 <= loadData.levels.Length - 1)
+                        {
+                            loadData.levels[i + 1].locked = "unlocked";
+                        }
+                            break;
                     }
                 }
                 loadData.Save();

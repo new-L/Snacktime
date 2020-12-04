@@ -28,6 +28,7 @@ public class OrderTimer : MonoBehaviour
     {
         timerText.text = converter.Convert(timer);
         timer--;
+        if (!gameObject.activeSelf) { CancelInvoke("Timer"); }
         if (timer < 0)
         {
             orders.DeleteOrder(id.text, gameObject, false);

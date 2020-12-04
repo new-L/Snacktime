@@ -1,0 +1,55 @@
+[
+    {
+      "name": "Пицца",
+      "ingredients": [
+        {"type": "Корж", "nameCode": "[pizzacake]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+        {"type": "Соус", "nameCode": "[sauce]" ,"typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+        {"type": "Куриное филе(готовое)", "nameCode": "[chicken_fillet_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+        {"type": "Грибы", "nameCode": "[mushrooms]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Помидор", "nameCode": "[tomato]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Оливки", "nameCode": "[olives]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+        {"type": "Сыр", "nameCode": "[cheese]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"}
+      ],
+      "cookingtime": "70",
+      "money":  "100",
+      "code": "[pizza]"
+    },
+    {
+        "name": "Хот-Дог",
+        "ingredients": [
+          {"type": "Булочка для Хот-Дога", "nameCode": "[hotdogbun]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Сосика(готовая)", "nameCode": "[sausage_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Листья сельдерея", "nameCode": "[celery]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Горчица", "nameCode": "[mustard]" ,"typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+          {"type": "Кетчуп", "nameCode": "[ketchup]" ,"typeCode": "sauce" ,"count": "1", "refuse": "optional"},
+          {"type": "Лук", "nameCode": "[onion]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"}
+        ],
+        "cookingtime": "40",
+        "money":  "90",
+        "code": "[hotdog]"
+    },
+    {
+          "name": "Блины",
+          "ingredients": [
+            {"type": "Блины(готовые)", "nameCode": "[pancake_ready]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+            {"type": "Сливочное масло", "nameCode": "[butter]" ,"typeCode": "additionally" ,"count": "1", "refuse": "required"}
+          ],
+          "cookingtime": "30",
+          "money":  "40",
+          "code": "[pancakes]"
+    },
+    {
+          "name": "Бургер",
+          "ingredients": [
+            {"type": "Булочка для бургера", "nameCode": "[burgerbun]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+            {"type": "Котлета(готовая)", "nameCode": "[cutlet_ready]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+            {"type": "Листья салата", "nameCode": "[salat]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+            {"type": "Помидор", "nameCode": "[tomato]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+            {"type": "Огурец", "nameCode": "[cucumber]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+            {"type": "Острая горчица", "nameCode": "[hotmustard]" ,"typeCode": "sauce" ,"count": "1", "refuse": "optional"}
+          ],
+          "cookingtime": "60",
+          "money":  "40",
+          "code": "[burger]"
+    }
+]

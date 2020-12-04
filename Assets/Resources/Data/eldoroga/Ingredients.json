@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Корж",
+        "code": "[pizzacake]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "20"
+    },
+    {
+        "name": "Булочка для Хот-Дога",
+        "code": "[hotdogbun]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "10"
+    },
+    {
+        "name": "Блины",
+        "code": "[pancake]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Блины(готовые)",
+        "code": "[pancake_ready]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "0"
+    },
+    {
+        "name": "Булочка для бургера",
+        "code": "[burgerbun]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "10"
+    },
+    {
+        "name": "Соус",
+        "code": "[sauce]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "15"
+    },
+    {
+        "name": "Куриное филе",
+        "code": "[chicken_fillet]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "25"
+    },
+    {
+        "name": "Куриное филе(готовое)",
+        "code": "[chicken_fillet_ready]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "0"
+    },
+    {
+        "name": "Грибы",
+        "code": "[mushrooms]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "15"
+    },
+    {
+        "name": "Помидор",
+        "code": "[tomato]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Оливки",
+        "code": "[olives]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Сыр",
+        "code": "[cheese]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Сосика",
+        "code": "[sausage]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Сосика(готовая)",
+        "code": "[sausage_ready]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "0"
+    },
+    {
+        "name": "Листья сельдерея",
+        "code": "[celery]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Горчица",
+        "code": "[mustard]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "15"
+    },
+    {
+        "name": "Кетчуп",
+        "code": "[ketchup]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "15"
+    },
+    {
+        "name": "Лук",
+        "code": "[onion]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Сливочное масло",
+        "code": "[butter]",
+        "type": "Доп",
+        "typeCode": "additionally",
+        "cost": "20"
+    },
+    {
+        "name": "Котлета",
+        "code": "[cutlet]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Котлета(готовая)",
+        "code": "[cutlet_ready]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "0"
+    },
+    {
+        "name": "Листья салата",
+        "code": "[salat]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Огурец",
+        "code": "[cucumber]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Острая горчица",
+        "code": "[hotmustard]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "5"
+    }
+]

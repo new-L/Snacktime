@@ -13,6 +13,7 @@ public class Order : MonoBehaviour
     [SerializeField] private Recipes recipes;
     [SerializeField] private UnityEvent m_OrderEvent;
     [SerializeField] private SetOrders actualOrders;
+    [SerializeField] private AddIngredients randomIngredient;
 
     public void Generate()
     {
@@ -53,6 +54,7 @@ public class Order : MonoBehaviour
         else
         {
             actualOrders.AddOrder(orderItem[orderItem.Count - 1]);
+            if (LevelData.LevelCode.Equals("eldoroga")) { AdditionalIngridient(orderItem[orderItem.Count - 1].id); }
             orderItem.RemoveAt(orderItem.Count - 1);
         }
     }
@@ -60,6 +62,14 @@ public class Order : MonoBehaviour
     private void AddToOrderList(RecipesItem item, RecipeIngredients[] ingr)
     {
         orderItem.Add(new OrderItem(item, ingr, id--, item.code, UnityEngine.Random.Range(1, 6)));
+    }
+
+    private void AdditionalIngridient(int id)
+    {
+        if(UnityEngine.Random.Range(1, 11) < 8)
+        {
+            actualOrders.actualAdditionalOrder.Add(new AdditionalItem(id, randomIngredient.addIngr[0].name, randomIngredient.addIngr[0].code));
+        }
     }
 }
 
@@ -107,4 +117,17 @@ public class OrderIngredient
         this.nameCode = nameCode;
     }
 }
+
+[Serializable]
+public class AdditionalItem
+{
+    public int id;
+    public string name, code;
+    public AdditionalItem(int _id, string _name, string _code)
+    {
+    id  =_id;
+        name = _name;
+        code = _code;
+}
+   }
 

@@ -31,6 +31,18 @@ public class OrderDetail : MonoBehaviour
                 var instance = Instantiate(dishPrefab.gameObject);
                 instance.transform.SetParent(dishContent, false);
                 InitializeDetailItemView(instance, model);
+                if (LevelData.LevelCode.Equals("eldoroga"))
+                {
+                    for (int i = 0; i < orders.actualAdditionalOrder.Count; i++)
+                    {
+                        if (orders.actualAdditionalOrder[i].id == model.id)
+                        {
+                            var addinstance = Instantiate(dishPrefab.gameObject);
+                            addinstance.transform.SetParent(dishContent, false);
+                            InitializeAdditionalItemView(addinstance, orders.actualAdditionalOrder[i]);
+                        }
+                    }
+                }
             }
         }
     }
@@ -71,5 +83,12 @@ public class OrderDetail : MonoBehaviour
     {
         orderID.text = "#" + LevelData.OrderID.ToString("0000");
         
+    }
+
+    public void InitializeAdditionalItemView(GameObject viewGameObject, AdditionalItem item)
+    {
+        ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
+        view.name.text = item.name.ToString();
+        view.comment.text = "Комментарий:\n";
     }
 }

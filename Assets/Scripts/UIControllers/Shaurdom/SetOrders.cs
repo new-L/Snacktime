@@ -13,6 +13,7 @@ public class SetOrders : MonoBehaviour
     [SerializeField] private Order orders;
 
     public List<OrderItem> actualOrderList;
+    public List<AdditionalItem> actualAdditionalOrder;
     public CheckDishWithOrder check;//delete
     private void Start()
     {
@@ -23,8 +24,11 @@ public class SetOrders : MonoBehaviour
     /*Вывод данных о ингредиентах*/
     public void SetOrdersList(bool start)
     {
-        if(start)
+        if (start)
+        {
             actualOrderList.Clear();
+            actualAdditionalOrder.Clear();
+        }
         foreach (Transform child in ordersContent)
         {
             Destroy(child.gameObject);

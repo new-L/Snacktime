@@ -22,6 +22,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + Code;
+        ItemForDish();
         if (eventData.pointerDrag != null && Resources.Load<Sprite>(_readyIngridientsPath) != null)
         {
             if (CheckBasisIngridient())
@@ -59,6 +60,24 @@ public class TableAreaData : MonoBehaviour, IDropHandler
 
         }
         StoveItemDragDrop.dropedOnTable = true;
+    }
+
+    private void ItemForDish()
+    {
+        string temp = Code;
+        foreach (var item in dish)
+        {
+            if (item.typeCode.Equals("basis"))
+            {
+                temp += item.code;
+                break;
+            }
+        }
+        print(temp);
+        if(Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/Real" + temp) != null)
+        {
+            _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + temp;
+        }
     }
 
     private void ItemFromStove(GameObject eventData)
@@ -165,6 +184,7 @@ public class CurrentDish
         checkable = false;
     }
 }
+
 
 
 
