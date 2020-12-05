@@ -142,6 +142,11 @@ public class TableAreaData : MonoBehaviour, IDropHandler
         RealPrefabComponents view = new RealPrefabComponents(viewGameObject.transform);
         view.ingridient.sprite = Resources.Load<Sprite>(_readyIngridientsPath);
         SetImageNativeSize(view.ingridient);
+        //Если что-то пойдет не так - удалить
+        viewGameObject.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 0f);
+        viewGameObject.GetComponent<RectTransform>().anchorMax = new Vector2(1f, 1f);
+        viewGameObject.GetComponent<RectTransform>().offsetMin = new Vector2(0f, 0f);
+        viewGameObject.GetComponent<RectTransform>().offsetMax = new Vector2(1f, 1f);
     }
     public void InitializeCurrentDish(bool addable, CurrentDish item)
     {
