@@ -22,10 +22,10 @@ public class TableAreaData : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + Code;
-        ItemForDish();
+        bool IsItOnBasis = ItemForDish();
         if (eventData.pointerDrag != null && Resources.Load<Sprite>(_readyIngridientsPath) != null)
         {
-            if (CheckBasisIngridient())
+            if (CheckBasisIngridient() && !GetTypeCode().Equals("basis"))//Для обычных ингредиентов
             {
                 SetItem();
                 for (int i = 0; i < Ingredients.ingredients.Length; i++)
@@ -38,11 +38,24 @@ public class TableAreaData : MonoBehaviour, IDropHandler
                     }
                 }
             }
-            else if (GetTypeCode().Equals("basis") && _code.Contains("_ready"))
+            else if (GetTypeCode().Equals("basis") && (Code.Contains("_ready") || IsItOnBasis))//Для приготовленного основного ингредиента или основного ингредиента для уже основы
             {
+                print("Сработал второй IF:" + Code + " | " + IsItOnBasis);
+                if(IsItOnBasis)
+                {
+                    for (int i = 0; i < Ingredients.ingredients.Length; i++)
+                    {
+                        if (Ingredients.ingredients[i].code.Equals(Code))
+                        {
+                            Ingredients.ingredients[i].count -= 1;
+                            setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                            break;
+                        }
+                    }
+                }
                 SetItem();
             }
-            else if (GetTypeCode().Equals("basis"))//если мы добавляем основной компонент
+            else if (GetTypeCode().Equals("basis") && !CheckBasisIngridient())//Если добавляем основной ингредиент, при этом, его нет на столе
             {
                 SetItem();
                 for (int i = 0; i < Ingredients.ingredients.Length; i++)
@@ -62,7 +75,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
         StoveItemDragDrop.dropedOnTable = true;
     }
 
-    private void ItemForDish()
+    private bool ItemForDish()
     {
         string temp = Code;
         foreach (var item in dish)
@@ -70,14 +83,16 @@ public class TableAreaData : MonoBehaviour, IDropHandler
             if (item.typeCode.Equals("basis"))
             {
                 temp += item.code;
+                if (Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/Real" + temp) != null)
+                {
+                    _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + temp;
+                    return true;
+                }
                 break;
             }
         }
         print(temp);
-        if(Resources.Load<Sprite>("Ingridients/" + LevelData.LevelCode + "/Real" + temp) != null)
-        {
-            _readyIngridientsPath = "Ingridients/" + LevelData.LevelCode + "/Real" + temp;
-        }
+        return false;
     }
 
     private void ItemFromStove(GameObject eventData)

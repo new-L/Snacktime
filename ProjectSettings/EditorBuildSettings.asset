@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ElDoroga.unity
     guid: 96240ce2f283ca3448fdca57cd9a48eb
+  - enabled: 1
+    path: Assets/Scenes/Ichiraku.unity
+    guid: 2e9200d834c9b3d47969040a28dcdf12
   m_configObjects: {}

@@ -1,0 +1,147 @@
+[
+    {
+        "name": "Нори",
+        "code": "[nori]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "20"
+    },
+    {
+        "name": "Бульон",
+        "code": "[bouillon]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "20"
+    },
+    {
+        "name": "Лапша удон",
+        "code": "[noodles_udon]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "20"
+    },
+    {
+        "name": "Бульон даси",
+        "code": "[dasi_bouillon]",
+        "type": "Основа",
+        "typeCode": "basis",
+        "cost": "20"
+    },
+    {
+        "name": "Рис",
+        "code": "[rise]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Огурец",
+        "code": "[cucumber]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Лосось",
+        "code": "[salmon]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Тунец",
+        "code": "[tuna]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Лапша",
+        "code": "[noodles]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Яйцо",
+        "code": "[egg]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Нарутомаки",
+        "code": "[narutomaki]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Соевый соус",
+        "code": "[soysauce]",
+        "type": "Соус",
+        "typeCode": "sauce",
+        "cost": "10"
+    },
+    {
+        "name": "Куриное филе",
+        "code": "[chicken_fillet]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Куриное филе(готовое)",
+        "code": "[chicken_fillet_ready]",
+        "type": "Начинка",
+        "typeCode": "filling"
+    },
+    {
+        "name": "Морковь",
+        "code": "[carrot]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Красный перец",
+        "code": "[red_pepper]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Репчатый лук",
+        "code": "[onion]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "10"
+    },
+    {
+        "name": "Тофу",
+        "code": "[tofu]",
+        "type": "Доп",
+        "typeCode": "additionally",
+        "cost": "50"
+    },
+    {
+        "name": "Петрушка",
+        "code": "[fennel]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "5"
+    },
+    {
+        "name": "Говядина",
+        "code": "[beef]",
+        "type": "Начинка",
+        "typeCode": "filling",
+        "cost": "30"
+    },
+    {
+        "name": "Говядина(готовая)",
+        "code": "[beef_ready]",
+        "type": "Начинка",
+        "typeCode": "filling"
+    }
+]

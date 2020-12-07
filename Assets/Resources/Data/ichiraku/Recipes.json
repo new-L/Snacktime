@@ -1,0 +1,76 @@
+[
+    {
+      "name": "Суши с огурцом",
+      "ingredients": [
+        {"type": "Нори", "nameCode": "[nori]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+        {"type": "Рис", "nameCode": "[rise]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+        {"type": "Огурец", "nameCode": "[cucumber]","typeCode": "filling" ,"count": "2", "refuse": "required"}
+      ],
+      "cookingtime": "30",
+      "money":  "55",
+      "code": "[sushiwcucmber]"
+    },
+    {
+        "name": "Суши с тунцом",
+        "ingredients": [
+          {"type": "Нори", "nameCode": "[nori]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Рис", "nameCode": "[rise]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Тунец", "nameCode": "[tuna]","typeCode": "filling" ,"count": "2", "refuse": "required"}
+        ],
+        "cookingtime": "30",
+        "money":  "60",
+        "code": "[sushiwtuna]"
+    },
+    {
+        "name": "Суши с лососем",
+        "ingredients": [
+          {"type": "Нори", "nameCode": "[nori]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Рис", "nameCode": "[rise]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Лосось", "nameCode": "[salmon]","typeCode": "filling" ,"count": "2", "refuse": "required"}
+        ],
+        "cookingtime": "30",
+        "money":  "60",
+        "code": "[sushiwsalmon]"
+    },
+    {
+        "name": "Рамен",
+        "ingredients": [
+          {"type": "Бульон", "nameCode": "[bouillon]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Лапша", "nameCode": "[noodles]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Яйцо", "nameCode": "[egg]","typeCode": "filling" ,"count": "2", "refuse": "optional"},
+          {"type": "Нарутомаки", "nameCode": "[narutomaki]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Куриное филе(готовое)", "nameCode": "[chicken_fillet_ready]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Нори", "nameCode": "[nori]","typeCode": "filling" ,"count": "1", "refuse": "optional"}
+        ],
+        "cookingtime": "70",
+        "money":  "60",
+        "code": "[ramen]"
+    },
+    {
+        "name": "Удон",
+        "ingredients": [
+          {"type": "Лапша удон", "nameCode": "[noodles_udon]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Куриное филе(готовое)", "nameCode": "[chicken_fillet_ready]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Морковь", "nameCode": "[carrot]" ,"typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Красный перец", "nameCode": "[red_pepper]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Репчатый лук", "nameCode": "[onion]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Соевый соус", "nameCode": "[soysauce]","typeCode": "sause" ,"count": "1", "refuse": "optional"}    
+        ],
+        "cookingtime": "70",
+        "money":  "60",
+        "code": "[udon]"
+    },
+    {
+        "name": "Сукияки",
+        "ingredients": [
+          {"type": "Бульон даси", "nameCode": "[dasi_bouillon]" ,"typeCode": "basis" ,"count": "1", "refuse": "required"},
+          {"type": "Лапша", "nameCode": "[noodles]" ,"typeCode": "filling" ,"count": "1", "refuse": "required"},
+          {"type": "Тофу", "nameCode": "[tofu]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Петрушка", "nameCode": "[fennel]","typeCode": "filling" ,"count": "1", "refuse": "optional"},
+          {"type": "Говядина(готовая)", "nameCode": "[beef_ready]","typeCode": "filling" ,"count": "1", "refuse": "optional"}          
+        ],
+        "cookingtime": "70",
+        "money":  "100",
+        "code": "[sukiyaki]"
+    }
+]
