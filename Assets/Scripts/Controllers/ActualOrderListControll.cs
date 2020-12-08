@@ -7,12 +7,14 @@ public class ActualOrderListControll : MonoBehaviour
     [SerializeField] private SetOrders orders;
     [SerializeField] private Final final;
     [SerializeField] private LevelDataControll levelControll;
+    [SerializeField] private AudioSource failed;
 
     public void DeleteOrder(string id, GameObject thisGameObject, bool complete)
     {
         if (!complete)
         {
             levelControll.Add("failed", LevelData.OrderUnCheck += 1);
+            SoundOnScene.Play(failed);
         }
         for(int i = 0; i < orders.actualOrderList.Count; i++)
         {

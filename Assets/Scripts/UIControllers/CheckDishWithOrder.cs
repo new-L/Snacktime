@@ -13,6 +13,7 @@ public class CheckDishWithOrder : MonoBehaviour
     [SerializeField] public LevelDataControll levelDataControll;
     [SerializeField] public Transform tableArea;
     [SerializeField] private GameObject coffee;
+    [SerializeField] private AudioSource complete, gordonComplete;
     public List<GameObject> prefabs;
     private bool _complete;
     int tempID;
@@ -45,6 +46,7 @@ public class CheckDishWithOrder : MonoBehaviour
                 levelDataControll.Add("money", LevelData.Money += item.money);
                 levelDataControll.Add("complete", LevelData.OrderCheck += 1);
                 orders.actualOrderList.Remove(item);
+                CompleteSound();
                 print("С чем-то совпало");
                 break;
             }
@@ -112,6 +114,15 @@ public class CheckDishWithOrder : MonoBehaviour
 
         return true;
 
+    }
+
+
+    private void CompleteSound()
+    {
+        if (UnityEngine.Random.Range(0, 101) <= 1)
+            SoundOnScene.Play(gordonComplete);
+        else
+            SoundOnScene.Play(complete);
     }
 
 }

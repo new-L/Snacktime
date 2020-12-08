@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class TableAreaData : MonoBehaviour, IDropHandler
 {
     [SerializeField] private SetIngredients setIngredients;
+    [SerializeField] private AudioSource dropedItem;
 
     private static string _code;
     private static bool _fromStove;
@@ -34,6 +35,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
                     {
                         Ingredients.ingredients[i].count -= 1;
                         setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                        SoundOnScene.Play(dropedItem);
                         break;
                     }
                 }
@@ -54,6 +56,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
                     }
                 }
                 SetItem();
+                SoundOnScene.Play(dropedItem);
             }
             else if (GetTypeCode().Equals("basis") && !CheckBasisIngridient())//Если добавляем основной ингредиент, при этом, его нет на столе
             {
@@ -64,6 +67,7 @@ public class TableAreaData : MonoBehaviour, IDropHandler
                     {
                         Ingredients.ingredients[i].count -= 1;
                         setIngredients.InitializeResourceItemView(eventData.pointerDrag, Ingredients.ingredients[i]);
+                        SoundOnScene.Play(dropedItem);
                         break;
                     }
                 }

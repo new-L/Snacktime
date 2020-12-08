@@ -14,6 +14,7 @@ public class Order : MonoBehaviour
     [SerializeField] private UnityEvent m_OrderEvent;
     [SerializeField] private SetOrders actualOrders;
     [SerializeField] private AddIngredients randomIngredient;
+    [SerializeField] private AudioSource newTask;
 
     public void Generate()
     {
@@ -53,6 +54,7 @@ public class Order : MonoBehaviour
         if (orderItem.Count <= 0) CancelInvoke("NewOrder");
         else
         {
+            SoundOnScene.Play(newTask);
             actualOrders.AddOrder(orderItem[orderItem.Count - 1]);
             if (LevelData.LevelCode.Equals("eldoroga")) { AdditionalIngridient(orderItem[orderItem.Count - 1].id); }
             orderItem.RemoveAt(orderItem.Count - 1);

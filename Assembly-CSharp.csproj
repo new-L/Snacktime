@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Controllers\RecipeItemStatement.cs" />
     <Compile Include="Assets\Scripts\Data\CoffeData.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
+    <Compile Include="Assets\Scripts\Data\SoundData.cs" />
     <Compile Include="Assets\Scripts\Data\StoreData.cs" />
     <Compile Include="Assets\Scripts\Data\StoveData.cs" />
     <Compile Include="Assets\Scripts\Data\TableAreaData.cs" />
@@ -86,6 +87,8 @@
     <Compile Include="Assets\Scripts\UIControllers\CheckDishWithOrder.cs" />
     <Compile Include="Assets\Scripts\UIControllers\DragWindow.cs" />
     <Compile Include="Assets\Scripts\UIControllers\LevelDataControll.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\MainMenu\BackgroundMusic.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\MainMenu\SoundOnSceneControll.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OpenMenu.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />
     <Compile Include="Assets\Scripts\UIControllers\SetRecipesIngridients.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetRecipes.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\SetStoreItems.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\Store.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\Sound\SoundOnScene.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoreItem.cs" />
     <Compile Include="Assets\Scripts\UIControllers\StoveItemDragDrop.cs" />
     <Compile Include="Assets\Scripts\UIControllers\dining\StoveDining.cs" />

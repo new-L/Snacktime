@@ -11,6 +11,7 @@ public class StoveData : MonoBehaviour, IDropHandler
     [SerializeField] private Image ingredientsImage;
     [SerializeField] private GameObject ingredients;
     [SerializeField] private SetIngredients setIngredients;
+    [SerializeField] private AudioSource dropedItem;
 
     private string _readyIngridientsPath;
 
@@ -68,6 +69,7 @@ public class StoveData : MonoBehaviour, IDropHandler
                         break;
                     }
                 }
+                SoundOnScene.Play(dropedItem);
                 StartCooking(10);
             }
         }
