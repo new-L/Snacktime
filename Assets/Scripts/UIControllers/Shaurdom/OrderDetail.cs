@@ -90,5 +90,6 @@ public class OrderDetail : MonoBehaviour
         ResourcePrefabComponents view = new ResourcePrefabComponents(viewGameObject.transform);
         view.name.text = item.name.ToString();
         view.comment.text = "Комментарий:\n";
+        view.icon.sprite = Resources.Load<Sprite>("Recipes/" + LevelData.LevelCode + "/" + item.code);
     }
 }
