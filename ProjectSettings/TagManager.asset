@@ -14,6 +14,10 @@ TagManager:
   - NoteTypeText
   - StorePanel_Cost
   - UISound
+  - TutorialText
+  - TutorialImage
+  - MainMenuSoundEffect
+  - BackgroundSOund
   layers:
   - Default
   - TransparentFX

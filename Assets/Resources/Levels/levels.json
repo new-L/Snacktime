@@ -7,16 +7,16 @@
 {
     "name": "Столовая",
     "code": "dining",
-    "locked": "uncloked"
+    "locked": "locked"
 },
   {
     "name": "El'Doroga",
     "code": "eldoroga",
-    "locked": "unlocked"
+    "locked": "locked"
   },
   {
     "name": "Ичираку",
     "code": "ichiraku",
-    "locked": "unlocked"
+    "locked": "locked"
   }
 ]

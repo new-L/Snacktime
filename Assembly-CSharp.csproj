@@ -88,7 +88,10 @@
     <Compile Include="Assets\Scripts\UIControllers\DragWindow.cs" />
     <Compile Include="Assets\Scripts\UIControllers\LevelDataControll.cs" />
     <Compile Include="Assets\Scripts\UIControllers\MainMenu\BackgroundMusic.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\MainMenu\SetTutorialItems.cs" />
     <Compile Include="Assets\Scripts\UIControllers\MainMenu\SoundOnSceneControll.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\MainMenu\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\MainMenu\TutorialTitle.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OpenMenu.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />
     <Compile Include="Assets\Scripts\UIControllers\SetRecipeMinimum.cs" />
