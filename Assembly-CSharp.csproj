@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\UIControllers\MainMenu\SoundOnSceneControll.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OpenMenu.cs" />
     <Compile Include="Assets\Scripts\UIControllers\OrderTimer.cs" />
+    <Compile Include="Assets\Scripts\UIControllers\SetRecipeMinimum.cs" />
     <Compile Include="Assets\Scripts\UIControllers\SetRecipesIngridients.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\DishTypeButton.cs" />
     <Compile Include="Assets\Scripts\UIControllers\Shaurdom\LoadLevelData.cs" />

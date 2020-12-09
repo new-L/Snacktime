@@ -21,13 +21,11 @@ public class Final : MonoBehaviour
     [SerializeField] private Image _background;
 
     [SerializeField] private int precent;
-    bool isPaused = true;
+    private bool isPaused = true;
     public void PauseTheGame()
     {
         Time.timeScale = 0;
         isPaused = true;
-        _menus.OpenPanel(_PausePanel);
-        _menus.OpenPanel(_FinalPanel);
     }
 
     public void UnPause()
@@ -41,6 +39,8 @@ public class Final : MonoBehaviour
         if(order.orderItem.Count == 0 && orders.actualOrderList.Count == 0)
         {
             PauseTheGame();
+            _menus.OpenPanel(_PausePanel);
+            _menus.OpenPanel(_FinalPanel);
             _completeTask.text = LevelData.OrderCheck.ToString();
             _failedTask.text = LevelData.OrderUnCheck.ToString();
             _money.text = LevelData.Money.ToString();
@@ -89,7 +89,7 @@ public class Final : MonoBehaviour
     {
         UnPause();
         StaticVarToNull();
-        SceneManager.LoadScene("LevelMenu");
+        SceneManager.LoadScene("Menu");
     }
 
 

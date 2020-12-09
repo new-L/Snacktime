@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class BackgroundMusic : MonoBehaviour
 {
+    [SerializeField] private GameObject MusicObject;
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        if (this.MusicObject != null)
+        {
+            DontDestroyOnLoad(MusicObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name != "Menu" && scene.name != "LevelMenu")
         {
-            Destroy(gameObject);
+            SoundData.IsSoundPlaying = false;
+            Destroy(this.MusicObject);
         }
     }
 }
